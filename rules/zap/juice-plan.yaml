@@ -1,0 +1,37 @@
+env:
+  contexts:
+    - name: juice
+      urls:
+        - http://localhost:3000
+      authentication:
+        method: json
+        parameters:
+          loginPageUrl: http://localhost:3000/#/login
+          loginRequestUrl: http://localhost:3000/rest/user/login
+          loginRequestBody: '{"email":"{%username%}","password":"{%password%}"}'
+        verification:
+          method: poll
+          pollUrl: http://localhost:3000/rest/user/whoami
+          loggedInRegex: '"email"'
+      sessionManagement:
+        method: headers
+        parameters:
+          Authorization: "Bearer {%json:authentication.token%}"
+      users:
+        - name: tester
+          credentials:
+            username: zap@test.local
+            password: ZapTest123!
+jobs:
+  - type: spider
+    parameters: {context: juice, user: tester, maxDuration: 3}
+  - type: spiderAjax
+    parameters: {context: juice, user: tester, maxDuration: 5}
+  - type: passiveScan-wait
+    parameters: {maxDuration: 5}
+  - type: activeScan
+    parameters: {context: juice, user: tester, maxScanDurationInMins: 20}
+  - type: report
+    parameters: {template: traditional-json, reportDir: /zap/wrk/results, reportFile: zap-auth.json}
+  - type: report
+    parameters: {template: traditional-html, reportDir: /zap/wrk/results, reportFile: zap-auth.html}
