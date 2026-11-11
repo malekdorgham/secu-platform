@@ -1,0 +1,24 @@
+- {id: JS-01, name: SQL injection in login, approaches: [SAST, DAST], cwe: [CWE-89], files: [routes/login.ts], endpoints: [/rest/user/login]}
+- {id: JS-02, name: UNION SQL injection in product search, approaches: [SAST, DAST], cwe: [CWE-89], files: [routes/search.ts], endpoints: [/rest/products/search]}
+- {id: JS-03, name: NoSQL injection in product reviews, approaches: [SAST, DAST], cwe: [CWE-943], files: [routes/showProductReviews.ts], endpoints: [/reviews]}
+- {id: JS-04, name: NoSQL injection in order tracking, approaches: [SAST, DAST], cwe: [CWE-943], files: [routes/trackOrder.ts], endpoints: [/rest/track-order]}
+- {id: JS-05, name: NoSQL mass update of reviews, approaches: [SAST, DAST], cwe: [CWE-943], files: [routes/updateProductReviews.ts], endpoints: [/rest/products/reviews]}
+- {id: JS-06, name: DOM XSS in search, approaches: [SAST, DAST], cwe: [CWE-79], files: [frontend/src/app/search-result/search-result.component.ts], endpoints: [/search]}
+- {id: JS-07, name: Reflected XSS in order tracking, approaches: [SAST, DAST], cwe: [CWE-79], files: [frontend/src/app/track-result/track-result.component.ts], endpoints: [/track-result]}
+- {id: JS-08, name: Open redirect allowlist bypass, approaches: [SAST, DAST], cwe: [CWE-601], files: [lib/insecurity.ts, routes/redirect.ts], endpoints: [/redirect]}
+- {id: JS-09, name: Directory listing of /ftp, approaches: [SAST, DAST], cwe: [CWE-548, CWE-538, CWE-200], files: [server.ts], endpoints: [/ftp]}
+- {id: JS-10, name: Prometheus metrics exposed, approaches: [DAST], cwe: [CWE-200], endpoints: [/metrics]}
+- {id: JS-11, name: MD5 password hashing, approaches: [SAST], cwe: [CWE-328, CWE-327, CWE-916], files: [lib/insecurity.ts, models/user.ts]}
+- {id: JS-12, name: Hardcoded JWT private key, approaches: [SAST], cwe: [CWE-798, CWE-321], files: [lib/insecurity.ts]}
+- {id: JS-13, name: Code execution via vm in B2B orders, approaches: [SAST, DAST], cwe: [CWE-94, CWE-95], files: [routes/b2bOrder.ts], endpoints: [/b2b/v2/orders]}
+- {id: JS-14, name: XXE in file upload, approaches: [SAST, DAST], cwe: [CWE-611, CWE-94], files: [lib/xml.ts, routes/fileUpload.ts], endpoints: [/file-upload]}
+- {id: JS-15, name: SSRF via profile image URL, approaches: [SAST, DAST], cwe: [CWE-918], files: [routes/profileImageUrlUpload.ts], endpoints: [/profile/image/url]}
+- {id: JS-16, name: Code injection (eval) in username, approaches: [SAST, DAST], cwe: [CWE-94, CWE-95], files: [routes/userProfile.ts], endpoints: [/profile]}
+- {id: JS-17, name: Product update without authentication, approaches: [DAST], cwe: [CWE-862, CWE-306], endpoints: [/api/Products]}
+- {id: JS-18, name: CORS allows any origin, approaches: [SAST, DAST], cwe: [CWE-942, CWE-264], files: [server.ts], endpoints: [/]}
+- {id: JS-19, name: Zip slip in file upload, approaches: [SAST], cwe: [CWE-22], files: [routes/fileUpload.ts]}
+- {id: JS-SCA-1, name: jsonwebtoken 0.4.0 (signature bypass), approaches: [SCA], packages: [jsonwebtoken]}
+- {id: JS-SCA-2, name: express-jwt 0.1.3 (authorization bypass), approaches: [SCA], packages: [express-jwt]}
+- {id: JS-SCA-3, name: sanitize-html 1.4.2 (XSS), approaches: [SCA], packages: [sanitize-html]}
+- {id: JS-SCA-4, name: marsdb (command injection), approaches: [SCA], packages: [marsdb]}
+- {id: JS-SCA-5, name: notevil (sandbox escape), approaches: [SCA], packages: [notevil]}
