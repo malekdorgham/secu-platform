@@ -1,0 +1,166 @@
+name: Security Scan
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: security-scan
+  cancel-in-progress: true
+
+env:
+  JUICE_VERSION: v20.3.0
+
+jobs:
+  sast-semgrep:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download Juice Shop source code
+        run: git clone --depth 1 --branch $JUICE_VERSION https://github.com/juice-shop/juice-shop target
+      - run: pip install semgrep
+      - name: Test our custom rules
+        continue-on-error: true
+        run: semgrep --test rules/semgrep/
+      - name: Semgrep with default rules (BEFORE)
+        run: |
+          semgrep scan target --config p/owasp-top-ten --config p/typescript --config p/javascript \
+            --exclude data/static/codefixes --exclude test --exclude "*.spec.ts" \
+            --metrics=off --json -o semgrep-baseline.json || true
+      - name: Semgrep with our custom rules (AFTER)
+        run: |
+          semgrep scan target --config rules/semgrep \
+            --exclude data/static/codefixes --exclude test --exclude "*.spec.ts" \
+            --metrics=off --json -o semgrep-custom.json || true
+      - uses: actions/upload-artifact@v4
+        with:
+          name: semgrep
+          path: semgrep-*.json
+
+  sast-sonar:
+    runs-on: ubuntu-latest
+    env:
+      SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+      SONAR_ORG: ${{ vars.SONAR_ORG }}
+      SONAR_KEY: ${{ vars.SONAR_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download Juice Shop source code
+        run: git clone --depth 1 --branch $JUICE_VERSION https://github.com/juice-shop/juice-shop target
+      - name: SonarCloud scan
+        if: ${{ env.SONAR_TOKEN != '' }}
+        continue-on-error: true
+        uses: SonarSource/sonarqube-scan-action@v5
+        env:
+          SONAR_HOST_URL: https://sonarcloud.io
+        with:
+          projectBaseDir: target
+          args: >
+            -Dsonar.organization=${{ vars.SONAR_ORG }}
+            -Dsonar.projectKey=${{ vars.SONAR_KEY }}
+            -Dsonar.exclusions=data/static/codefixes/**,test/**,**/*.spec.ts
+            -Dsonar.qualitygate.wait=true
+      - name: Export SonarCloud results
+        if: ${{ env.SONAR_TOKEN != '' }}
+        run: |
+          curl -s -u "$SONAR_TOKEN:" "https://sonarcloud.io/api/issues/search?componentKeys=$SONAR_KEY&types=VULNERABILITY&ps=500" -o sonar-issues.json
+          curl -s -u "$SONAR_TOKEN:" "https://sonarcloud.io/api/hotspots/search?projectKey=$SONAR_KEY&ps=500" -o sonar-hotspots.json
+      - uses: actions/upload-artifact@v4
+        if: ${{ env.SONAR_TOKEN != '' }}
+        with:
+          name: sonar
+          path: sonar-*.json
+
+  sca:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download Juice Shop source code
+        run: git clone --depth 1 --branch $JUICE_VERSION https://github.com/juice-shop/juice-shop target
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: npm audit
+        run: |
+          cd target
+          npm install --package-lock-only --ignore-scripts --legacy-peer-deps
+          npm audit --json > ../npm-audit.json || true
+      - name: Trivy
+        uses: aquasecurity/trivy-action@master
+        with:
+          scan-type: fs
+          scan-ref: target
+          scanners: vuln
+          format: json
+          output: trivy-fs.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: sca
+          path: |
+            npm-audit.json
+            trivy-fs.json
+
+  dast:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Start Juice Shop
+        run: docker run -d --name juice -p 3000:3000 bkimminich/juice-shop:$JUICE_VERSION
+      - name: Wait until Juice Shop answers
+        run: timeout 300 bash -c 'until curl -sf http://localhost:3000 > /dev/null; do sleep 5; done'
+      - name: Create the test user ZAP will log in with
+        run: |
+          curl -s -X POST http://localhost:3000/api/Users -H "Content-Type: application/json" \
+            -d '{"email":"zap@test.local","password":"ZapTest123!","passwordRepeat":"ZapTest123!","securityQuestion":{"id":1},"securityAnswer":"zap"}'
+      - name: ZAP authenticated scan
+        run: |
+          mkdir -p results
+          docker run --rm --network host -u root -v "$PWD:/zap/wrk" ghcr.io/zaproxy/zaproxy:stable \
+            zap.sh -cmd -autorun /zap/wrk/rules/zap/juice-plan.yaml || true
+      - name: Our custom DAST checks
+        run: |
+          pip install requests
+          python custom-checks/juice_checks.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: dast
+          path: |
+            results/zap-auth.json
+            results/zap-auth.html
+            results/custom-dast.json
+
+  report:
+    needs: [sast-semgrep, sast-sonar, sca, dast]
+    if: always()
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          path: raw
+      - run: pip install pyyaml jinja2
+      - name: Normalize, evaluate, report
+        run: |
+          python scripts/normalize.py raw out/findings.json
+          python scripts/evaluate.py out/findings.json ground-truth/juice-shop.yaml out/metrics.json
+          python scripts/report.py out/metrics.json out/findings.json out/report.html
+          cp raw/dast/zap-auth.html out/ || true
+      - uses: actions/upload-artifact@v4
+        with:
+          name: final-report
+          path: out/
+          retention-days: 90
+      - name: Archive this run in the results branch
+        run: |
+          RUN=${{ github.run_number }}
+          mkdir history && cd history
+          git init -q
+          git remote add origin "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}"
+          if git fetch -q origin results; then git checkout -q results; else git checkout -q -b results; fi
+          mkdir -p "runs/$RUN" && cp -r ../out/* "runs/$RUN/"
+          git add .
+          git -c user.name=ci-bot -c user.email=ci-bot@users.noreply.github.com commit -q -m "Scan run $RUN"
+          git push -q origin results
