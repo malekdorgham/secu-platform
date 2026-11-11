@@ -1,0 +1,2747 @@
+[
+  {
+    "tool": "trivy",
+    "approach": "SCA",
+    "rule": "CVE-2026-3449",
+    "cwe": "CWE-705",
+    "severity": "LOW",
+    "location": "@tootallnate/once@1.1.2",
+    "title": "@tootallnate/once: @tootallnate/once: Denial of Service due to incorrect control flow scoping with AbortSignal"
+  },
+  {
+    "tool": "trivy",
+    "approach": "SCA",
+    "rule": "NSWG-ECO-428",
+    "cwe": "",
+    "severity": "HIGH",
+    "location": "base64url@0.0.6",
+    "title": "Out-of-bounds Read"
+  },
+  {
+    "tool": "trivy",
+    "approach": "SCA",
+    "rule": "GHSA-rvg8-pwq2-xj7q",
+    "cwe": "",
+    "severity": "MEDIUM",
+    "location": "base64url@0.0.6",
+    "title": "Out-of-bounds Read in base64url"
+  },
+  {
+    "tool": "trivy",
+    "approach": "SCA",
+    "rule": "CVE-2026-102990",
+    "cwe": "CWE-1333",
+    "severity": "HIGH",
+    "location": "basic-ftp@5.3.1",
+    "title": "basic-ftp: basic-ftp: Denial of Service via crafted Unix directory listings"
+  },
+  {
+    "tool": "trivy",
+    "approach": "SCA",
+    "rule": "CVE-2023-46233",
+    "cwe": "CWE-328",
+    "severity": "CRITICAL",
+    "location": "crypto-js@3.3.0",
+    "title": "crypto-js: PBKDF2 1,000 times weaker than specified in 1993 and 1.3M times weaker than current standard"
+  },
+  {
+    "tool": "trivy",
+    "approach": "SCA",
+    "rule": "CVE-2026-71851",
+    "cwe": "CWE-331",
+    "severity": "CRITICAL",
+    "location": "crypto-js@3.3.0",
+    "title": "crypto-js: crypto-js: Insufficient Entropy in Cryptographic Secret Generation via Vulnerable CryptoJS Dependency Chain"
+  },
+  {
+    "tool": "trivy",
+    "approach": "SCA",
+    "rule": "CVE-2026-118664",
+    "cwe": "CWE-400",
+    "severity": "HIGH",
+    "location": "decode-uri-component@0.2.2",
+    "title": "decode-uri-component: decode-uri-component: Denial of Service via malformed percent-encoded input"
+  },
+  {
+    "tool": "trivy",
+    "approach": "SCA",
+    "rule": "CVE-2026-45822",
+    "cwe": "CWE-400",
+    "severity": "MEDIUM",
+    "location": "decode-uri-component@0.2.2",
+    "title": "decode-uri-component: decode-uri-component: Denial of Service via crafted input"
+  },
+  {
+    "tool": "trivy",
+    "approach": "SCA",
+    "rule": "CVE-2026-101894",
+    "cwe": "CWE-22",
+    "severity": "CRITICAL",
+    "location": "decompress@4.2.1",
+    "title": "@xhmikosr/decompress: @xhmikosr/decompress: Path traversal via symlink chain"
+  },
+  {
+    "tool": "trivy",
+    "approach": "SCA",
+    "rule": "CVE-2026-53486",
+    "cwe": "CWE-22",
+    "severity": "CRITICAL",
+    "location": "decompress@4.2.1",
+    "title": "decompress: @xhmikosr/decompress: Decompress: Arbitrary file read/write via crafted archive extraction"
+  },
+  {
+    "tool": "trivy",
+    "approach": "SCA",
+    "rule": "CVE-2026-10732",
+    "cwe": "CWE-29",
+    "severity": "MEDIUM",
+    "location": "decompress@4.2.1",
+    "title": "decompress: Decompress: Arbitrary file write leading to remote code execution via crafted ZIP archive (Zip Slip)"
+  },
+  {
+    "tool": "trivy",
+    "approach": "SCA",
+    "rule": "CVE-2026-39243",
+    "cwe": "CWE-59",
+    "severity": "MEDIUM",
+    "location": "decompress@4.2.1",
+    "title": "decompress: Decompress: File disclosure and corruption via arbitrary hardlink creation"
+  },
+  {
+    "tool": "trivy",
+    "approach": "SCA",
+    "rule": "CVE-2020-15084",
+    "cwe": "CWE-285",
+    "severity": "HIGH",
+    "location": "express-jwt@0.1.3",
+    "title": "Authorization bypass in express-jwt"
+  },
+  {
+    "tool": "trivy",
+    "approach": "SCA",
+    "rule": "CVE-2026-31808",
+    "cwe": "CWE-835",
+    "severity": "MEDIUM",
+    "location": "file-type@16.5.4",
+    "title": "file-type: file-type: Denial of Service due to infinite loop in ASF file parsing"
+  },
+  {
+    "tool": "trivy",
+    "approach": "SCA",
+    "rule": "CVE-2026-118773",
+    "cwe": "CWE-400",
+    "severity": "MEDIUM",
+    "location": "glob@10.5.0",
+    "title": "glob: glob: Denial of Service (DoS) via incomplete traversal cancellation"
+  },
+  {
+    "tool": "trivy",
+    "approach": "SCA",
+    "rule": "CVE-2022-33987",
+    "cwe": "",
+    "severity": "MEDIUM",
+    "location": "got@8.3.2",
+    "title": "nodejs-got: missing verification of requested URLs allows redirects to UNIX sockets"
+  },
+  {
+    "tool": "trivy",
+    "approach": "SCA",
+    "rule": "CVE-2021-32822",
+    "cwe": "CWE-538",
+    "severity": "MEDIUM",
+    "location": "hbs@4.4.0",
+    "title": "hbs: Insertion of Sensitive Information into Externally-Accessible File or Directory and Exposure of Sensitive Information to an Unauthorized Actor"
+  },
+  {
+    "tool": "trivy",
+    "approach": "SCA",
+    "rule": "CVE-2022-25881",
+    "cwe": "CWE-1333",
+    "severity": "HIGH",
+    "location": "http-cache-semantics@3.8.1",
+    "title": "http-cache-semantics: Regular Expression Denial of Service (ReDoS) vulnerability"
+  },
+  {
+    "tool": "trivy",
+    "approach": "SCA",
+    "rule": "CVE-2015-9235",
+    "cwe": "CWE-20",
+    "severity": "CRITICAL",
+    "location": "jsonwebtoken@0.1.0",
+    "title": "nodejs-jsonwebtoken: verification step bypass with an altered token"
+  },
+  {
+    "tool": "trivy",
+    "approach": "SCA",
+    "rule": "CVE-2022-23539",
+    "cwe": "CWE-327",
+    "severity": "HIGH",
+    "location": "jsonwebtoken@0.1.0",
+    "title": "jsonwebtoken: Unrestricted key type could lead to legacy keys usagen"
+  },
+  {
+    "tool": "trivy",
+    "approach": "SCA",
+    "rule": "NSWG-ECO-17",
+    "cwe": "",
+    "severity": "HIGH",
+    "location": "jsonwebtoken@0.1.0",
+    "title": "Verification Bypass"
+  },
+  {
+    "tool": "trivy",
+    "approach": "SCA",
+    "rule": "CVE-2022-23540",
+    "cwe": "CWE-287",
+    "severity": "MEDIUM",
+    "location": "jsonwebtoken@0.1.0",
+    "title": "jsonwebtoken: Insecure default algorithm in jwt.verify() could lead to signature validation bypass"
+  },
+  {
+    "tool": "trivy",
+    "approach": "SCA",
+    "rule": "CVE-2022-23541",
+    "cwe": "CWE-287",
+    "severity": "MEDIUM",
+    "location": "jsonwebtoken@0.1.0",
+    "title": "jsonwebtoken: Insecure implementation of key retrieval function could lead to Forgeable Public/Private Tokens from RSA to HMAC"
+  },
+  {
+    "tool": "trivy",
+    "approach": "SCA",
+    "rule": "CVE-2015-9235",
+    "cwe": "CWE-20",
+    "severity": "CRITICAL",
+    "location": "jsonwebtoken@0.4.0",
+    "title": "nodejs-jsonwebtoken: verification step bypass with an altered token"
+  },
+  {
+    "tool": "trivy",
+    "approach": "SCA",
+    "rule": "CVE-2022-23539",
+    "cwe": "CWE-327",
+    "severity": "HIGH",
+    "location": "jsonwebtoken@0.4.0",
+    "title": "jsonwebtoken: Unrestricted key type could lead to legacy keys usagen"
+  },
+  {
+    "tool": "trivy",
+    "approach": "SCA",
+    "rule": "NSWG-ECO-17",
+    "cwe": "",
+    "severity": "HIGH",
+    "location": "jsonwebtoken@0.4.0",
+    "title": "Verification Bypass"
+  },
+  {
+    "tool": "trivy",
+    "approach": "SCA",
+    "rule": "CVE-2022-23540",
+    "cwe": "CWE-287",
+    "severity": "MEDIUM",
+    "location": "jsonwebtoken@0.4.0",
+    "title": "jsonwebtoken: Insecure default algorithm in jwt.verify() could lead to signature validation bypass"
+  },
+  {
+    "tool": "trivy",
+    "approach": "SCA",
+    "rule": "CVE-2022-23541",
+    "cwe": "CWE-287",
+    "severity": "MEDIUM",
+    "location": "jsonwebtoken@0.4.0",
+    "title": "jsonwebtoken: Insecure implementation of key retrieval function could lead to Forgeable Public/Private Tokens from RSA to HMAC"
+  },
+  {
+    "tool": "trivy",
+    "approach": "SCA",
+    "rule": "CVE-2016-1000223",
+    "cwe": "",
+    "severity": "HIGH",
+    "location": "jws@0.2.6",
+    "title": "Forgeable Public/Private Tokens"
+  },
+  {
+    "tool": "trivy",
+    "approach": "SCA",
+    "rule": "CVE-2025-65945",
+    "cwe": "CWE-347",
+    "severity": "HIGH",
+    "location": "jws@0.2.6",
+    "title": "node-jws: auth0/node-jws: Improper signature verification in HS256 algorithm"
+  },
+  {
+    "tool": "trivy",
+    "approach": "SCA",
+    "rule": "CVE-2019-10744",
+    "cwe": "CWE-1321",
+    "severity": "CRITICAL",
+    "location": "lodash@2.4.2",
+    "title": "nodejs-lodash: prototype pollution in defaultsDeep function leading to modifying properties"
+  },
+  {
+    "tool": "trivy",
+    "approach": "SCA",
+    "rule": "CVE-2018-16487",
+    "cwe": "CWE-400",
+    "severity": "HIGH",
+    "location": "lodash@2.4.2",
+    "title": "lodash: Prototype pollution in utilities function"
+  },
+  {
+    "tool": "trivy",
+    "approach": "SCA",
+    "rule": "CVE-2021-23337",
+    "cwe": "CWE-94",
+    "severity": "HIGH",
+    "location": "lodash@2.4.2",
+    "title": "nodejs-lodash: command injection via template"
+  },
+  {
+    "tool": "trivy",
+    "approach": "SCA",
+    "rule": "CVE-2018-3721",
+    "cwe": "CWE-471",
+    "severity": "LOW",
+    "location": "lodash@2.4.2",
+    "title": "lodash: Prototype pollution in utilities function"
+  },
+  {
+    "tool": "trivy",
+    "approach": "SCA",
+    "rule": "GHSA-5mrr-rgp6-x4gr",
+    "cwe": "",
+    "severity": "CRITICAL",
+    "location": "marsdb@0.6.11",
+    "title": "Command Injection in marsdb"
+  },
+  {
+    "tool": "trivy",
+    "approach": "SCA",
+    "rule": "CVE-2025-57349",
+    "cwe": "CWE-1321",
+    "severity": "LOW",
+    "location": "messageformat@2.3.0",
+    "title": "messageformat has a prototype pollution vulnerability"
+  },
+  {
+    "tool": "trivy",
+    "approach": "SCA",
+    "rule": "CVE-2026-26996",
+    "cwe": "CWE-1333",
+    "severity": "HIGH",
+    "location": "minimatch@3.0.5",
+    "title": "minimatch: minimatch: Denial of Service via specially crafted glob patterns"
+  },
+  {
+    "tool": "trivy",
+    "approach": "SCA",
+    "rule": "CVE-2026-27903",
+    "cwe": "CWE-407",
+    "severity": "HIGH",
+    "location": "minimatch@3.0.5",
+    "title": "minimatch: minimatch: Denial of Service due to unbounded recursive backtracking via crafted glob patterns"
+  },
+  {
+    "tool": "trivy",
+    "approach": "SCA",
+    "rule": "CVE-2026-27904",
+    "cwe": "CWE-1333",
+    "severity": "HIGH",
+    "location": "minimatch@3.0.5",
+    "title": "minimatch: Minimatch: Denial of Service via catastrophic backtracking in glob expressions"
+  },
+  {
+    "tool": "trivy",
+    "approach": "SCA",
+    "rule": "CVE-2026-118764",
+    "cwe": "CWE-405",
+    "severity": "MEDIUM",
+    "location": "minimatch@9.0.9",
+    "title": "minimatch: minimatch: Denial of Service via crafted glob pattern expansion"
+  },
+  {
+    "tool": "trivy",
+    "approach": "SCA",
+    "rule": "CVE-2017-18214",
+    "cwe": "CWE-400",
+    "severity": "HIGH",
+    "location": "moment@2.0.0",
+    "title": "nodejs-moment: Regular expression denial of service"
+  },
+  {
+    "tool": "trivy",
+    "approach": "SCA",
+    "rule": "CVE-2022-24785",
+    "cwe": "CWE-22",
+    "severity": "HIGH",
+    "location": "moment@2.0.0",
+    "title": "Moment.js: Path traversal  in moment.locale"
+  },
+  {
+    "tool": "trivy",
+    "approach": "SCA",
+    "rule": "CVE-2016-4055",
+    "cwe": "CWE-400",
+    "severity": "MEDIUM",
+    "location": "moment@2.0.0",
+    "title": "moment.js: regular expression denial of service"
+  },
+  {
+    "tool": "trivy",
+    "approach": "SCA",
+    "rule": "CVE-2021-23771",
+    "cwe": "CWE-1321",
+    "severity": "MEDIUM",
+    "location": "notevil@1.3.3",
+    "title": "Sandbox escape in notevil and argencoders-notevil"
+  },
+  {
+    "tool": "trivy",
+    "approach": "SCA",
+    "rule": "CVE-2022-25887",
+    "cwe": "CWE-1333",
+    "severity": "HIGH",
+    "location": "sanitize-html@1.4.2",
+    "title": "sanitize-html: insecure global regular expression replacement logic may lead to ReDoS"
+  },
+  {
+    "tool": "trivy",
+    "approach": "SCA",
+    "rule": "CVE-2016-1000237",
+    "cwe": "CWE-79",
+    "severity": "MEDIUM",
+    "location": "sanitize-html@1.4.2",
+    "title": "XSS - Sanitization not applied recursively"
+  },
+  {
+    "tool": "trivy",
+    "approach": "SCA",
+    "rule": "CVE-2017-16016",
+    "cwe": "CWE-79",
+    "severity": "MEDIUM",
+    "location": "sanitize-html@1.4.2",
+    "title": "Cross-Site Scripting in sanitize-html"
+  },
+  {
+    "tool": "trivy",
+    "approach": "SCA",
+    "rule": "CVE-2019-25225",
+    "cwe": "CWE-79",
+    "severity": "MEDIUM",
+    "location": "sanitize-html@1.4.2",
+    "title": "sanitize-html: sanitize-html cross site scripting"
+  },
+  {
+    "tool": "trivy",
+    "approach": "SCA",
+    "rule": "CVE-2021-26539",
+    "cwe": "",
+    "severity": "MEDIUM",
+    "location": "sanitize-html@1.4.2",
+    "title": "sanitize-html: improper handling of internationalized domain name (IDN) can lead to bypass hostname whitelist validation"
+  },
+  {
+    "tool": "trivy",
+    "approach": "SCA",
+    "rule": "CVE-2021-26540",
+    "cwe": "",
+    "severity": "MEDIUM",
+    "location": "sanitize-html@1.4.2",
+    "title": "sanitize-html: improper validation of hostnames set by the \"allowedIframeHostnames\" option can lead to bypass hostname whitelist for iframe element"
+  },
+  {
+    "tool": "trivy",
+    "approach": "SCA",
+    "rule": "CVE-2024-21501",
+    "cwe": "CWE-200",
+    "severity": "MEDIUM",
+    "location": "sanitize-html@1.4.2",
+    "title": "sanitize-html: Information Exposure when used on the backend"
+  },
+  {
+    "tool": "trivy",
+    "approach": "SCA",
+    "rule": "CVE-2026-113654",
+    "cwe": "CWE-79",
+    "severity": "MEDIUM",
+    "location": "sanitize-html@1.4.2",
+    "title": "sanitize-html: sanitize-html: HTML sanitization bypass via improper noscript tag handling"
+  },
+  {
+    "tool": "trivy",
+    "approach": "SCA",
+    "rule": "CVE-2026-113661",
+    "cwe": "CWE-79",
+    "severity": "MEDIUM",
+    "location": "sanitize-html@1.4.2",
+    "title": "sanitize-html: sanitize-html: Cross-site scripting via unsafe meta refresh content attributes"
+  },
+  {
+    "tool": "trivy",
+    "approach": "SCA",
+    "rule": "CVE-2026-63670",
+    "cwe": "CWE-79",
+    "severity": "MEDIUM",
+    "location": "sanitize-html@1.4.2",
+    "title": "ApostropheCMS: Mutation-XSS / allowedTags bypass via literal `</textarea/>` solidus close"
+  },
+  {
+    "tool": "trivy",
+    "approach": "SCA",
+    "rule": "NSWG-ECO-154",
+    "cwe": "",
+    "severity": "MEDIUM",
+    "location": "sanitize-html@1.4.2",
+    "title": "Cross Site Scripting"
+  },
+  {
+    "tool": "trivy",
+    "approach": "SCA",
+    "rule": "CVE-2026-59873",
+    "cwe": "CWE-770",
+    "severity": "CRITICAL",
+    "location": "tar@6.2.1",
+    "title": "tar: node-tar: Denial of Service via crafted gzip bomb"
+  },
+  {
+    "tool": "trivy",
+    "approach": "SCA",
+    "rule": "CVE-2026-23745",
+    "cwe": "CWE-22",
+    "severity": "HIGH",
+    "location": "tar@6.2.1",
+    "title": "node-tar: tar: node-tar: Arbitrary file overwrite and symlink poisoning via unsanitized linkpaths in archives"
+  },
+  {
+    "tool": "trivy",
+    "approach": "SCA",
+    "rule": "CVE-2026-23950",
+    "cwe": "CWE-176",
+    "severity": "HIGH",
+    "location": "tar@6.2.1",
+    "title": "node-tar: tar: node-tar: Arbitrary file overwrite via Unicode path collision race condition"
+  },
+  {
+    "tool": "trivy",
+    "approach": "SCA",
+    "rule": "CVE-2026-24842",
+    "cwe": "CWE-22",
+    "severity": "HIGH",
+    "location": "tar@6.2.1",
+    "title": "node-tar: tar: node-tar: Arbitrary file creation via path traversal bypass in hardlink security check"
+  },
+  {
+    "tool": "trivy",
+    "approach": "SCA",
+    "rule": "CVE-2026-26960",
+    "cwe": "CWE-22",
+    "severity": "HIGH",
+    "location": "tar@6.2.1",
+    "title": "node-tar: node-tar: Arbitrary file read/write via malicious archive hardlink creation"
+  },
+  {
+    "tool": "trivy",
+    "approach": "SCA",
+    "rule": "CVE-2026-29786",
+    "cwe": "CWE-22",
+    "severity": "HIGH",
+    "location": "tar@6.2.1",
+    "title": "node-tar: hardlink path traversal via drive-relative linkpath"
+  },
+  {
+    "tool": "trivy",
+    "approach": "SCA",
+    "rule": "CVE-2026-31802",
+    "cwe": "CWE-22",
+    "severity": "HIGH",
+    "location": "tar@6.2.1",
+    "title": "tar: tar: File overwrite via drive-relative symlink traversal"
+  },
+  {
+    "tool": "trivy",
+    "approach": "SCA",
+    "rule": "CVE-2026-59874",
+    "cwe": "CWE-835",
+    "severity": "HIGH",
+    "location": "tar@6.2.1",
+    "title": "tar: Node-tar: Denial of Service via malformed tar archive header"
+  },
+  {
+    "tool": "trivy",
+    "approach": "SCA",
+    "rule": "CVE-2026-73566",
+    "cwe": "CWE-400",
+    "severity": "HIGH",
+    "location": "tar@6.2.1",
+    "title": "tar: node-tar: Denial of Service via crafted long-path tar archive"
+  },
+  {
+    "tool": "trivy",
+    "approach": "SCA",
+    "rule": "CVE-2026-53655",
+    "cwe": "CWE-436",
+    "severity": "MEDIUM",
+    "location": "tar@6.2.1",
+    "title": "node-tar: node-tar: File smuggling due to inconsistent tar archive parsing"
+  },
+  {
+    "tool": "trivy",
+    "approach": "SCA",
+    "rule": "CVE-2026-59871",
+    "cwe": "CWE-704",
+    "severity": "MEDIUM",
+    "location": "tar@6.2.1",
+    "title": "node-tar: node-tar: Denial of Service due to incorrect PAX path handling"
+  },
+  {
+    "tool": "trivy",
+    "approach": "SCA",
+    "rule": "CVE-2026-59875",
+    "cwe": "CWE-248",
+    "severity": "MEDIUM",
+    "location": "tar@6.2.1",
+    "title": "node-tar: node-tar: Denial of Service via crafted archive with NUL bytes in metadata"
+  },
+  {
+    "tool": "trivy",
+    "approach": "SCA",
+    "rule": "CVE-2026-41907",
+    "cwe": "CWE-787",
+    "severity": "MEDIUM",
+    "location": "uuid@8.3.2",
+    "title": "uuid: uuid: Out-of-bounds write vulnerability impacts data integrity and confidentiality"
+  },
+  {
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1121296",
+    "cwe": "CWE-78",
+    "severity": "HIGH",
+    "location": "@cyclonedx/cyclonedx-npm",
+    "title": "@cyclonedx/cyclonedx-npm: Shell Injection via Unsanitized --workspace Argument"
+  },
+  {
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1224698",
+    "cwe": "CWE-78",
+    "severity": "HIGH",
+    "location": "@cyclonedx/cyclonedx-npm",
+    "title": "@cyclonedx/cyclonedx-npm: Shell Injection via Unsanitized --workspace Argument on Windows"
+  },
+  {
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1119438",
+    "cwe": "CWE-705",
+    "severity": "LOW",
+    "location": "@tootallnate/once",
+    "title": "@tootallnate/once vulnerable to Incorrect Control Flow Scoping"
+  },
+  {
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1091792",
+    "cwe": "CWE-125",
+    "severity": "MODERATE",
+    "location": "base64url",
+    "title": "Out-of-bounds Read in base64url"
+  },
+  {
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1240853",
+    "cwe": "CWE-1333",
+    "severity": "HIGH",
+    "location": "basic-ftp",
+    "title": "basic-ftp: Quadratic-time CPU denial of service in Client.list() Unix directory-listing parser (RE_LINE backtracking)"
+  },
+  {
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1096365",
+    "cwe": "CWE-327",
+    "severity": "CRITICAL",
+    "location": "crypto-js",
+    "title": "crypto-js PBKDF2 1,000 times weaker than specified in 1993 and 1.3M times weaker than current standard"
+  },
+  {
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1138770",
+    "cwe": "CWE-331",
+    "severity": "CRITICAL",
+    "location": "crypto-js",
+    "title": "crypto-js: Insufficient Entropy in Cryptographic Secret Generation via Vulnerable CryptoJS Dependency Chain"
+  },
+  {
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1147955",
+    "cwe": "CWE-400",
+    "severity": "HIGH",
+    "location": "decode-uri-component",
+    "title": "decode-uri-component: Denial of service via exponential decoding of malformed percent-encoded input"
+  },
+  {
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1243857",
+    "cwe": "CWE-400",
+    "severity": "HIGH",
+    "location": "decode-uri-component",
+    "title": "decode-uri-component vulnerable to denial of service via quadratic replacement of percent-encoded runs"
+  },
+  {
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1122670",
+    "cwe": "CWE-22",
+    "severity": "CRITICAL",
+    "location": "decompress",
+    "title": "Decompress: Archive extraction can create files and links outside of the target directory"
+  },
+  {
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1130126",
+    "cwe": "CWE-22",
+    "severity": "CRITICAL",
+    "location": "decompress",
+    "title": "decompress: Arbitrary File Write via Archive Extraction (Zip Slip)"
+  },
+  {
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1139405",
+    "cwe": "CWE-59",
+    "severity": "CRITICAL",
+    "location": "decompress",
+    "title": "decompress allows arbitrary hardlink creation during archive extraction"
+  },
+  {
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1240094",
+    "cwe": "CWE-22",
+    "severity": "CRITICAL",
+    "location": "decompress",
+    "title": "@xhmikosr/decompress: Path traversal via symlink chain"
+  },
+  {
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1090200",
+    "cwe": "CWE-285",
+    "severity": "HIGH",
+    "location": "express-jwt",
+    "title": "Authorization bypass in express-jwt"
+  },
+  {
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1114301",
+    "cwe": "CWE-835",
+    "severity": "MODERATE",
+    "location": "file-type",
+    "title": "file-type affected by infinite loop in ASF parser on malformed input with zero-size sub-header"
+  },
+  {
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1244013",
+    "cwe": "CWE-400",
+    "severity": "MODERATE",
+    "location": "glob",
+    "title": "Glob: AbortSignal cancellation bypass allows post-timeout filesystem traversal"
+  },
+  {
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1088948",
+    "cwe": "",
+    "severity": "HIGH",
+    "location": "got",
+    "title": "Got allows a redirect to a UNIX socket"
+  },
+  {
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1243453",
+    "cwe": "CWE-94",
+    "severity": "MODERATE",
+    "location": "hbs",
+    "title": "hbs: Insertion of Sensitive Information into Externally-Accessible File or Directory and Exposure of Sensitive Information to an Unauthorized Actor"
+  },
+  {
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1102456",
+    "cwe": "CWE-1333",
+    "severity": "HIGH",
+    "location": "http-cache-semantics",
+    "title": "http-cache-semantics vulnerable to Regular Expression Denial of Service"
+  },
+  {
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1090918",
+    "cwe": "CWE-20",
+    "severity": "CRITICAL",
+    "location": "jsonwebtoken",
+    "title": "Verification Bypass in jsonwebtoken"
+  },
+  {
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1097690",
+    "cwe": "CWE-327",
+    "severity": "CRITICAL",
+    "location": "jsonwebtoken",
+    "title": "jsonwebtoken unrestricted key type could lead to legacy keys usage "
+  },
+  {
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1097694",
+    "cwe": "CWE-287",
+    "severity": "CRITICAL",
+    "location": "jsonwebtoken",
+    "title": "jsonwebtoken's insecure implementation of key retrieval function could lead to Forgeable Public/Private Tokens from RSA to HMAC"
+  },
+  {
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1102458",
+    "cwe": "CWE-287",
+    "severity": "CRITICAL",
+    "location": "jsonwebtoken",
+    "title": "jsonwebtoken vulnerable to signature validation bypass due to insecure default algorithm in jwt.verify()"
+  },
+  {
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1087397",
+    "cwe": "",
+    "severity": "HIGH",
+    "location": "jws",
+    "title": "Forgeable Public/Private Tokens in jws"
+  },
+  {
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1111244",
+    "cwe": "CWE-347",
+    "severity": "HIGH",
+    "location": "jws",
+    "title": "auth0/node-jws Improperly Verifies HMAC Signature"
+  },
+  {
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1106900",
+    "cwe": "CWE-471",
+    "severity": "CRITICAL",
+    "location": "lodash",
+    "title": "Prototype Pollution in lodash"
+  },
+  {
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1106913",
+    "cwe": "CWE-77",
+    "severity": "CRITICAL",
+    "location": "lodash",
+    "title": "Command Injection in lodash"
+  },
+  {
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1106914",
+    "cwe": "CWE-400",
+    "severity": "CRITICAL",
+    "location": "lodash",
+    "title": "Prototype Pollution in lodash"
+  },
+  {
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1106918",
+    "cwe": "CWE-20",
+    "severity": "CRITICAL",
+    "location": "lodash",
+    "title": "Prototype Pollution in lodash"
+  },
+  {
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1086801",
+    "cwe": "CWE-77",
+    "severity": "CRITICAL",
+    "location": "marsdb",
+    "title": "Command Injection in marsdb"
+  },
+  {
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1113459",
+    "cwe": "CWE-1333",
+    "severity": "HIGH",
+    "location": "minimatch",
+    "title": "minimatch has a ReDoS via repeated wildcards with non-matching literal in pattern"
+  },
+  {
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1113538",
+    "cwe": "CWE-407",
+    "severity": "HIGH",
+    "location": "minimatch",
+    "title": "minimatch has ReDoS: matchOne() combinatorial backtracking via multiple non-adjacent GLOBSTAR segments"
+  },
+  {
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1113546",
+    "cwe": "CWE-1333",
+    "severity": "HIGH",
+    "location": "minimatch",
+    "title": "minimatch ReDoS: nested *() extglobs generate catastrophically backtracking regular expressions"
+  },
+  {
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1244623",
+    "cwe": "CWE-405",
+    "severity": "HIGH",
+    "location": "minimatch",
+    "title": "minimatch has potential denial of service via globparts amplification"
+  },
+  {
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1091022",
+    "cwe": "CWE-400",
+    "severity": "HIGH",
+    "location": "moment",
+    "title": "Regular Expression Denial of Service in moment"
+  },
+  {
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1091723",
+    "cwe": "CWE-400",
+    "severity": "HIGH",
+    "location": "moment",
+    "title": "Regular Expression Denial of Service in moment"
+  },
+  {
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1109571",
+    "cwe": "CWE-22",
+    "severity": "HIGH",
+    "location": "moment",
+    "title": "Path Traversal: 'dir/../../filename' in moment.locale"
+  },
+  {
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1088750",
+    "cwe": "CWE-1321",
+    "severity": "MODERATE",
+    "location": "notevil",
+    "title": "Sandbox escape in notevil and argencoders-notevil"
+  },
+  {
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1089955",
+    "cwe": "CWE-20",
+    "severity": "HIGH",
+    "location": "sanitize-html",
+    "title": "Improper Input Validation in sanitize-html"
+  },
+  {
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1090842",
+    "cwe": "CWE-79",
+    "severity": "HIGH",
+    "location": "sanitize-html",
+    "title": "Cross-Site Scripting in sanitize-html"
+  },
+  {
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1091789",
+    "cwe": "CWE-20",
+    "severity": "HIGH",
+    "location": "sanitize-html",
+    "title": "Improper Input Validation in sanitize-html"
+  },
+  {
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1093595",
+    "cwe": "CWE-79",
+    "severity": "HIGH",
+    "location": "sanitize-html",
+    "title": "Cross-Site Scripting in sanitize-html"
+  },
+  {
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1097161",
+    "cwe": "CWE-1333",
+    "severity": "HIGH",
+    "location": "sanitize-html",
+    "title": "Sanitize-html Vulnerable To REDoS Attacks"
+  },
+  {
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1107530",
+    "cwe": "CWE-79",
+    "severity": "HIGH",
+    "location": "sanitize-html",
+    "title": "sanitize-html is vulnerable to XSS through incomprehensive sanitization"
+  },
+  {
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1115182",
+    "cwe": "CWE-200",
+    "severity": "HIGH",
+    "location": "sanitize-html",
+    "title": "sanitize-html Information Exposure vulnerability"
+  },
+  {
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1164821",
+    "cwe": "CWE-79",
+    "severity": "HIGH",
+    "location": "sanitize-html",
+    "title": "ApostropheCMS: Mutation-XSS / allowedTags bypass via literal `</textarea/>` solidus close"
+  },
+  {
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1242620",
+    "cwe": "CWE-79",
+    "severity": "HIGH",
+    "location": "sanitize-html",
+    "title": "ApostropheCMS sanitize-html: nonTextTags discard region ends early on an implied close, letting <noscript> content render"
+  },
+  {
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1242641",
+    "cwe": "CWE-79",
+    "severity": "HIGH",
+    "location": "sanitize-html",
+    "title": "ApostropheCMS: Incomplete CVE-2026-53606: `meta http-equiv=refresh` `content` still ships `javascript:` / `data:` URLs"
+  },
+  {
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1112659",
+    "cwe": "CWE-22",
+    "severity": "CRITICAL",
+    "location": "tar",
+    "title": "node-tar Vulnerable to Arbitrary File Creation/Overwrite via Hardlink Path Traversal"
+  },
+  {
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1113300",
+    "cwe": "CWE-22",
+    "severity": "CRITICAL",
+    "location": "tar",
+    "title": "node-tar is Vulnerable to Arbitrary File Overwrite and Symlink Poisoning via Insufficient Path Sanitization"
+  },
+  {
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1113375",
+    "cwe": "CWE-22",
+    "severity": "CRITICAL",
+    "location": "tar",
+    "title": "Arbitrary File Read/Write via Hardlink Target Escape Through Symlink Chain in node-tar Extraction"
+  },
+  {
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1114200",
+    "cwe": "CWE-22",
+    "severity": "CRITICAL",
+    "location": "tar",
+    "title": "tar has Hardlink Path Traversal via Drive-Relative Linkpath"
+  },
+  {
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1114302",
+    "cwe": "CWE-22",
+    "severity": "CRITICAL",
+    "location": "tar",
+    "title": "node-tar Symlink Path Traversal via Drive-Relative Linkpath"
+  },
+  {
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1114680",
+    "cwe": "CWE-176",
+    "severity": "CRITICAL",
+    "location": "tar",
+    "title": "Race Condition in node-tar Path Reservations via Unicode Ligature Collisions on macOS APFS"
+  },
+  {
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1120782",
+    "cwe": "CWE-436",
+    "severity": "CRITICAL",
+    "location": "tar",
+    "title": "node-tar applies PAX size override to intermediary GNU long-name/long-link headers, causing tar parser interpretation differential (file smuggling)"
+  },
+  {
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1123939",
+    "cwe": "CWE-704",
+    "severity": "CRITICAL",
+    "location": "tar",
+    "title": "node-tar: Process crash via PAX numeric path type confusion"
+  },
+  {
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1123940",
+    "cwe": "CWE-770",
+    "severity": "CRITICAL",
+    "location": "tar",
+    "title": "node-tar: Decompression/parse DoS via unlimited input"
+  },
+  {
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1123941",
+    "cwe": "CWE-835",
+    "severity": "CRITICAL",
+    "location": "tar",
+    "title": "node-tar: Negative tar entry size causes infinite loop in archive replace"
+  },
+  {
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1123942",
+    "cwe": "CWE-248",
+    "severity": "CRITICAL",
+    "location": "tar",
+    "title": "node-tar: Uncaught Exception DoS via NUL byte in PAX path/linkpath records"
+  },
+  {
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1145647",
+    "cwe": "CWE-400",
+    "severity": "CRITICAL",
+    "location": "tar",
+    "title": "node-tar: Uncontrolled recursion in mapHas/filesFilter allows uncatchable stack-overflow DoS via crafted long-path tar with member selection"
+  },
+  {
+    "tool": "npm-audit",
+    "approach": "SCA",
+    "rule": "1119441",
+    "cwe": "CWE-787",
+    "severity": "MODERATE",
+    "location": "uuid",
+    "title": "uuid: Missing buffer bounds check in v3/v5/v6 when buf is provided"
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S8543",
+    "cwe": "",
+    "severity": "MAJOR",
+    "location": ".github/workflows/ci.yml:38",
+    "title": "Using dependencies without locking resolved versions is security-sensitive."
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S8543",
+    "cwe": "",
+    "severity": "MAJOR",
+    "location": ".github/workflows/ci.yml:40",
+    "title": "Using dependencies without locking resolved versions is security-sensitive."
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S6505",
+    "cwe": "",
+    "severity": "MAJOR",
+    "location": ".github/workflows/ci.yml:77",
+    "title": "Omitting \"--ignore-scripts\" allows lifecycle scripts to run during package installation."
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S8543",
+    "cwe": "",
+    "severity": "MAJOR",
+    "location": ".github/workflows/ci.yml:77",
+    "title": "Using dependencies without locking resolved versions is security-sensitive."
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S8543",
+    "cwe": "",
+    "severity": "MAJOR",
+    "location": ".github/workflows/ci.yml:118",
+    "title": "Using dependencies without locking resolved versions is security-sensitive."
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S6505",
+    "cwe": "",
+    "severity": "MAJOR",
+    "location": ".github/workflows/ci.yml:118",
+    "title": "Omitting \"--ignore-scripts\" allows lifecycle scripts to run during package installation."
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S6505",
+    "cwe": "",
+    "severity": "MAJOR",
+    "location": ".github/workflows/ci.yml:157",
+    "title": "Omitting \"--ignore-scripts\" allows lifecycle scripts to run during package installation."
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S8543",
+    "cwe": "",
+    "severity": "MAJOR",
+    "location": ".github/workflows/ci.yml:157",
+    "title": "Using dependencies without locking resolved versions is security-sensitive."
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S7637",
+    "cwe": "",
+    "severity": "MAJOR",
+    "location": ".github/workflows/ci.yml:198",
+    "title": "Use full commit SHA hash for this dependency."
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S6505",
+    "cwe": "",
+    "severity": "MAJOR",
+    "location": ".github/workflows/ci.yml:215",
+    "title": "Omitting \"--ignore-scripts\" allows lifecycle scripts to run during package installation."
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S8543",
+    "cwe": "",
+    "severity": "MAJOR",
+    "location": ".github/workflows/ci.yml:215",
+    "title": "Using dependencies without locking resolved versions is security-sensitive."
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S6505",
+    "cwe": "",
+    "severity": "MAJOR",
+    "location": ".github/workflows/ci.yml:250",
+    "title": "Omitting \"--ignore-scripts\" allows lifecycle scripts to run during package installation."
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S8543",
+    "cwe": "",
+    "severity": "MAJOR",
+    "location": ".github/workflows/ci.yml:250",
+    "title": "Using dependencies without locking resolved versions is security-sensitive."
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S6505",
+    "cwe": "",
+    "severity": "MAJOR",
+    "location": ".github/workflows/ci.yml:252",
+    "title": "Omitting \"--ignore-scripts\" allows lifecycle scripts to run during package installation."
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S8543",
+    "cwe": "",
+    "severity": "MAJOR",
+    "location": ".github/workflows/ci.yml:252",
+    "title": "Using dependencies without locking resolved versions is security-sensitive."
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S6505",
+    "cwe": "",
+    "severity": "MAJOR",
+    "location": ".github/workflows/ci.yml:298",
+    "title": "Omitting \"--ignore-scripts\" allows lifecycle scripts to run during package installation."
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S8543",
+    "cwe": "",
+    "severity": "MAJOR",
+    "location": ".github/workflows/ci.yml:298",
+    "title": "Using dependencies without locking resolved versions is security-sensitive."
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S6505",
+    "cwe": "",
+    "severity": "MAJOR",
+    "location": ".github/workflows/ci.yml:299",
+    "title": "Omitting \"--ignore-scripts\" allows lifecycle scripts to run during package installation."
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S8543",
+    "cwe": "",
+    "severity": "MAJOR",
+    "location": ".github/workflows/ci.yml:299",
+    "title": "Using dependencies without locking resolved versions is security-sensitive."
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S6505",
+    "cwe": "",
+    "severity": "MAJOR",
+    "location": ".github/workflows/ci.yml:308",
+    "title": "Omitting \"--ignore-scripts\" allows lifecycle scripts to run during package installation."
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S8543",
+    "cwe": "",
+    "severity": "MAJOR",
+    "location": ".github/workflows/ci.yml:308",
+    "title": "Using dependencies without locking resolved versions is security-sensitive."
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S8482",
+    "cwe": "",
+    "severity": "BLOCKER",
+    "location": ".github/workflows/ci.yml:374",
+    "title": "Avoid executing downloaded artifacts directly without verification."
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S8543",
+    "cwe": "",
+    "severity": "MAJOR",
+    "location": ".github/workflows/frontend-bundle-analysis.yml:28",
+    "title": "Using dependencies without locking resolved versions is security-sensitive."
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S8543",
+    "cwe": "",
+    "severity": "MAJOR",
+    "location": ".github/workflows/frontend-bundle-analysis.yml:33",
+    "title": "Using dependencies without locking resolved versions is security-sensitive."
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S6505",
+    "cwe": "",
+    "severity": "MAJOR",
+    "location": ".github/workflows/frontend-bundle-analysis.yml:42",
+    "title": "Omitting \"--ignore-scripts\" allows lifecycle scripts to run during package installation."
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S8543",
+    "cwe": "",
+    "severity": "MAJOR",
+    "location": ".github/workflows/frontend-bundle-analysis.yml:42",
+    "title": "Using dependencies without locking resolved versions is security-sensitive."
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S6505",
+    "cwe": "",
+    "severity": "MAJOR",
+    "location": ".github/workflows/frontend-bundle-analysis.yml:46",
+    "title": "\"npx\" can install packages on-demand and run their lifecycle scripts."
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S8543",
+    "cwe": "",
+    "severity": "MAJOR",
+    "location": ".github/workflows/frontend-bundle-analysis.yml:46",
+    "title": "Define exact package version to avoid installing unverified releases."
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S7637",
+    "cwe": "",
+    "severity": "MAJOR",
+    "location": ".github/workflows/image_actions.yml:33",
+    "title": "Use full commit SHA hash for this dependency."
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S7637",
+    "cwe": "",
+    "severity": "MAJOR",
+    "location": ".github/workflows/image_actions.yml:42",
+    "title": "Use full commit SHA hash for this dependency."
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S8543",
+    "cwe": "",
+    "severity": "MAJOR",
+    "location": ".github/workflows/lint-fixer.yml:21",
+    "title": "Using dependencies without locking resolved versions is security-sensitive."
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S8543",
+    "cwe": "",
+    "severity": "MAJOR",
+    "location": ".github/workflows/lint-fixer.yml:23",
+    "title": "Using dependencies without locking resolved versions is security-sensitive."
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S6505",
+    "cwe": "",
+    "severity": "MAJOR",
+    "location": ".github/workflows/release.yml:58",
+    "title": "Omitting \"--ignore-scripts\" allows lifecycle scripts to run during package installation."
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S8543",
+    "cwe": "",
+    "severity": "MAJOR",
+    "location": ".github/workflows/release.yml:58",
+    "title": "Using dependencies without locking resolved versions is security-sensitive."
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S6505",
+    "cwe": "",
+    "severity": "MAJOR",
+    "location": ".github/workflows/release.yml:68",
+    "title": "Omitting \"--ignore-scripts\" allows lifecycle scripts to run during package installation."
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S8543",
+    "cwe": "",
+    "severity": "MAJOR",
+    "location": ".github/workflows/release.yml:68",
+    "title": "Using dependencies without locking resolved versions is security-sensitive."
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S6506",
+    "cwe": "",
+    "severity": "MAJOR",
+    "location": ".github/workflows/update-challenges-ebook.yml:25",
+    "title": "Not disabling redirects might allow for redirections to insecure websites. Make sure it is safe here."
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S8543",
+    "cwe": "",
+    "severity": "MAJOR",
+    "location": "Dockerfile:4",
+    "title": "Using dependencies without locking resolved versions is security-sensitive."
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S6505",
+    "cwe": "",
+    "severity": "MAJOR",
+    "location": "Dockerfile:4",
+    "title": "Omitting \"--ignore-scripts\" allows lifecycle scripts to run during package installation."
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S8543",
+    "cwe": "",
+    "severity": "MAJOR",
+    "location": "Dockerfile:5",
+    "title": "Using dependencies without locking resolved versions is security-sensitive."
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S6505",
+    "cwe": "",
+    "severity": "MAJOR",
+    "location": "Dockerfile:5",
+    "title": "Omitting \"--ignore-scripts\" allows lifecycle scripts to run during package installation."
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S8543",
+    "cwe": "",
+    "severity": "MAJOR",
+    "location": "Dockerfile:19",
+    "title": "Using dependencies without locking resolved versions is security-sensitive."
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S6505",
+    "cwe": "",
+    "severity": "MAJOR",
+    "location": "Dockerfile:19",
+    "title": "Omitting \"--ignore-scripts\" allows lifecycle scripts to run during package installation."
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S5332",
+    "cwe": "",
+    "severity": "MINOR",
+    "location": "data/datacreator.ts:86",
+    "title": "Using http protocol is insecure. Use https instead."
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S5332",
+    "cwe": "",
+    "severity": "MINOR",
+    "location": "data/datacreator.ts:173",
+    "title": "Using http protocol is insecure. Use https instead."
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S2245",
+    "cwe": "",
+    "severity": "MAJOR",
+    "location": "data/datacreator.ts:756",
+    "title": "Make sure that using this pseudorandom number generator is safe here."
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S2068",
+    "cwe": "CWE-798",
+    "severity": "MAJOR",
+    "location": "data/static/i18n/nl_NL.json:145",
+    "title": "\"password\" detected here, make sure this is not a hard-coded credential."
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S2068",
+    "cwe": "CWE-798",
+    "severity": "MAJOR",
+    "location": "data/static/users.yml:31",
+    "title": "\"password\" detected here, make sure this is not a hard-coded credential."
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S2068",
+    "cwe": "CWE-798",
+    "severity": "MAJOR",
+    "location": "data/static/users.yml:63",
+    "title": "\"password\" detected here, make sure this is not a hard-coded credential."
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S2068",
+    "cwe": "CWE-798",
+    "severity": "MAJOR",
+    "location": "data/static/users.yml:88",
+    "title": "\"password\" detected here, make sure this is not a hard-coded credential."
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S2068",
+    "cwe": "CWE-798",
+    "severity": "MAJOR",
+    "location": "data/static/users.yml:107",
+    "title": "\"password\" detected here, make sure this is not a hard-coded credential."
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S2068",
+    "cwe": "CWE-798",
+    "severity": "MAJOR",
+    "location": "data/static/users.yml:115",
+    "title": "\"password\" detected here, make sure this is not a hard-coded credential."
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S2068",
+    "cwe": "CWE-798",
+    "severity": "MAJOR",
+    "location": "data/static/users.yml:123",
+    "title": "\"password\" detected here, make sure this is not a hard-coded credential."
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S2068",
+    "cwe": "CWE-798",
+    "severity": "MAJOR",
+    "location": "data/static/users.yml:132",
+    "title": "\"password\" detected here, make sure this is not a hard-coded credential."
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S2068",
+    "cwe": "CWE-798",
+    "severity": "MAJOR",
+    "location": "data/static/users.yml:150",
+    "title": "\"password\" detected here, make sure this is not a hard-coded credential."
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S6418",
+    "cwe": "CWE-798",
+    "severity": "BLOCKER",
+    "location": "data/static/users.yml:151",
+    "title": "\"Secret\" detected here, make sure this is not a hard-coded secret."
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S2068",
+    "cwe": "CWE-798",
+    "severity": "MAJOR",
+    "location": "data/static/users.yml:188",
+    "title": "\"password\" detected here, make sure this is not a hard-coded credential."
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S2068",
+    "cwe": "CWE-798",
+    "severity": "MAJOR",
+    "location": "data/static/users.yml:197",
+    "title": "\"password\" detected here, make sure this is not a hard-coded credential."
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S2068",
+    "cwe": "CWE-798",
+    "severity": "MAJOR",
+    "location": "data/static/users.yml:206",
+    "title": "\"password\" detected here, make sure this is not a hard-coded credential."
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S2068",
+    "cwe": "CWE-798",
+    "severity": "MAJOR",
+    "location": "data/static/users.yml:239",
+    "title": "\"password\" detected here, make sure this is not a hard-coded credential."
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S2068",
+    "cwe": "CWE-798",
+    "severity": "MAJOR",
+    "location": "data/static/users.yml:245",
+    "title": "\"password\" detected here, make sure this is not a hard-coded credential."
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S2068",
+    "cwe": "CWE-798",
+    "severity": "MAJOR",
+    "location": "data/static/users.yml:251",
+    "title": "\"password\" detected here, make sure this is not a hard-coded credential."
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S2068",
+    "cwe": "CWE-798",
+    "severity": "MAJOR",
+    "location": "data/static/users.yml:261",
+    "title": "\"password\" detected here, make sure this is not a hard-coded credential."
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S2068",
+    "cwe": "CWE-798",
+    "severity": "MAJOR",
+    "location": "data/static/users.yml:277",
+    "title": "\"password\" detected here, make sure this is not a hard-coded credential."
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S2068",
+    "cwe": "CWE-798",
+    "severity": "MAJOR",
+    "location": "data/static/users.yml:286",
+    "title": "\"password\" detected here, make sure this is not a hard-coded credential."
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S8564",
+    "cwe": "",
+    "severity": "MAJOR",
+    "location": "frontend/package.json:0",
+    "title": "Dependency versions are not predictable if the lock file (package-lock.json, npm-shrinkwrap.json, bun.lock, bun.lockb, pnpm-lock.yaml or yarn.lock) is"
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S6268",
+    "cwe": "",
+    "severity": "BLOCKER",
+    "location": "frontend/src/app/about/about.component.ts:120",
+    "title": "Make sure disabling Angular built-in sanitization is safe here."
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S6268",
+    "cwe": "",
+    "severity": "BLOCKER",
+    "location": "frontend/src/app/administration/administration.component.ts:74",
+    "title": "Make sure disabling Angular built-in sanitization is safe here."
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S6268",
+    "cwe": "",
+    "severity": "BLOCKER",
+    "location": "frontend/src/app/administration/administration.component.ts:92",
+    "title": "Make sure disabling Angular built-in sanitization is safe here."
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S6268",
+    "cwe": "",
+    "severity": "BLOCKER",
+    "location": "frontend/src/app/data-export/data-export.component.ts:58",
+    "title": "Make sure disabling Angular built-in sanitization is safe here."
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S6268",
+    "cwe": "",
+    "severity": "BLOCKER",
+    "location": "frontend/src/app/last-login-ip/last-login-ip.component.ts:40",
+    "title": "Make sure disabling Angular built-in sanitization is safe here."
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S6268",
+    "cwe": "",
+    "severity": "BLOCKER",
+    "location": "frontend/src/app/score-board/score-board.component.ts:83",
+    "title": "Make sure disabling Angular built-in sanitization is safe here."
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S6268",
+    "cwe": "",
+    "severity": "BLOCKER",
+    "location": "frontend/src/app/search-result/search-result.component.ts:113",
+    "title": "Make sure disabling Angular built-in sanitization is safe here."
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S6268",
+    "cwe": "",
+    "severity": "BLOCKER",
+    "location": "frontend/src/app/search-result/search-result.component.ts:146",
+    "title": "Make sure disabling Angular built-in sanitization is safe here."
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S6268",
+    "cwe": "",
+    "severity": "BLOCKER",
+    "location": "frontend/src/app/track-result/track-result.component.ts:49",
+    "title": "Make sure disabling Angular built-in sanitization is safe here."
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S2068",
+    "cwe": "CWE-798",
+    "severity": "MAJOR",
+    "location": "frontend/src/assets/i18n/tlh_AA.json:28",
+    "title": "\"PASSWORD\" detected here, make sure this is not a hard-coded credential."
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S6258",
+    "cwe": "",
+    "severity": "MAJOR",
+    "location": "infrastructure/terraform/networking.tf:122",
+    "title": "Omitting \"access_logs\" makes logs incomplete. Make sure it is safe here."
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S5332",
+    "cwe": "",
+    "severity": "MINOR",
+    "location": "infrastructure/terraform/networking.tf:160",
+    "title": "Make sure allowing clear-text traffic is safe here."
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S6706",
+    "cwe": "",
+    "severity": "BLOCKER",
+    "location": "infrastructure/terraform/networking.tf:171",
+    "title": "Make sure this private key gets revoked, changed, and removed from the code."
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S6706",
+    "cwe": "",
+    "severity": "BLOCKER",
+    "location": "lib/insecurity.ts:21",
+    "title": "Make sure this private key gets revoked, changed, and removed from the code."
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S4790",
+    "cwe": "CWE-328",
+    "severity": "CRITICAL",
+    "location": "lib/insecurity.ts:41",
+    "title": "Make sure this weak hash algorithm is not used in a sensitive context here."
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S6437",
+    "cwe": "",
+    "severity": "BLOCKER",
+    "location": "lib/insecurity.ts:42",
+    "title": "Revoke and change this password, as it is compromised."
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S2245",
+    "cwe": "",
+    "severity": "MAJOR",
+    "location": "lib/insecurity.ts:53",
+    "title": "Make sure that using this pseudorandom number generator is safe here."
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S5332",
+    "cwe": "",
+    "severity": "MINOR",
+    "location": "lib/insecurity.ts:127",
+    "title": "Using http protocol is insecure. Use https instead."
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S5332",
+    "cwe": "",
+    "severity": "MINOR",
+    "location": "lib/insecurity.ts:128",
+    "title": "Using http protocol is insecure. Use https instead."
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S5332",
+    "cwe": "",
+    "severity": "MINOR",
+    "location": "lib/insecurity.ts:130",
+    "title": "Using http protocol is insecure. Use https instead."
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S1523",
+    "cwe": "CWE-95",
+    "severity": "CRITICAL",
+    "location": "lib/xml.ts:38",
+    "title": "Make sure that this dynamic injection or execution of code is safe."
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S5334",
+    "cwe": "CWE-94",
+    "severity": "BLOCKER",
+    "location": "lib/xml.ts:38",
+    "title": "Code Injection via unsanitized user input"
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S8564",
+    "cwe": "",
+    "severity": "MAJOR",
+    "location": "package.json:0",
+    "title": "Dependency versions are not predictable if the lock file (package-lock.json, npm-shrinkwrap.json, bun.lock, bun.lockb, pnpm-lock.yaml or yarn.lock) is"
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S1523",
+    "cwe": "CWE-95",
+    "severity": "CRITICAL",
+    "location": "routes/b2bOrder.ts:23",
+    "title": "Make sure that this dynamic injection or execution of code is safe."
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S5334",
+    "cwe": "CWE-94",
+    "severity": "BLOCKER",
+    "location": "routes/b2bOrder.ts:23",
+    "title": "Code Injection via unsanitized user input"
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S1523",
+    "cwe": "CWE-95",
+    "severity": "CRITICAL",
+    "location": "routes/captcha.ts:22",
+    "title": "Make sure that this dynamic injection or execution of code is safe."
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S2083",
+    "cwe": "CWE-22",
+    "severity": "BLOCKER",
+    "location": "routes/dataErasure.ts:107",
+    "title": "Path Traversal via unsanitized user input"
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S2083",
+    "cwe": "CWE-22",
+    "severity": "BLOCKER",
+    "location": "routes/dataErasure.ts:123",
+    "title": "Path Traversal via unsanitized user input"
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S1523",
+    "cwe": "CWE-95",
+    "severity": "CRITICAL",
+    "location": "routes/fileUpload.ts:114",
+    "title": "Make sure that this dynamic injection or execution of code is safe."
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S5334",
+    "cwe": "CWE-94",
+    "severity": "BLOCKER",
+    "location": "routes/fileUpload.ts:114",
+    "title": "Code Injection via unsanitized user input"
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S3649",
+    "cwe": "CWE-89",
+    "severity": "BLOCKER",
+    "location": "routes/login.ts:34",
+    "title": "SQL Injection via unsanitized user input"
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S5144",
+    "cwe": "CWE-918",
+    "severity": "MAJOR",
+    "location": "routes/profileImageUrlUpload.ts:24",
+    "title": "Server-Side Request Forgery via unsanitized user input"
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S5146",
+    "cwe": "CWE-601",
+    "severity": "BLOCKER",
+    "location": "routes/redirect.ts:18",
+    "title": "Open Redirect via unsanitized user input"
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S3649",
+    "cwe": "CWE-89",
+    "severity": "BLOCKER",
+    "location": "routes/search.ts:23",
+    "title": "SQL Injection via unsanitized user input"
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S5334",
+    "cwe": "CWE-94",
+    "severity": "BLOCKER",
+    "location": "routes/showProductReviews.ts:36",
+    "title": "Code Injection via unsanitized user input"
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S5334",
+    "cwe": "CWE-94",
+    "severity": "BLOCKER",
+    "location": "routes/trackOrder.ts:18",
+    "title": "Code Injection via unsanitized user input"
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S5147",
+    "cwe": "CWE-943",
+    "severity": "BLOCKER",
+    "location": "routes/updateProductReviews.ts:17",
+    "title": "NoSQL Injection via unsanitized user input"
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S1523",
+    "cwe": "CWE-95",
+    "severity": "CRITICAL",
+    "location": "routes/userProfile.ts:65",
+    "title": "Make sure that this dynamic injection or execution of code is safe."
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S4036",
+    "cwe": "",
+    "severity": "MINOR",
+    "location": "scripts/package.mjs:20",
+    "title": "Make sure the \"PATH\" variable only contains fixed, unwriteable directories."
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S4790",
+    "cwe": "CWE-328",
+    "severity": "CRITICAL",
+    "location": "scripts/package.mjs:121",
+    "title": "Make sure this weak hash algorithm is not used in a sensitive context here."
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S4507",
+    "cwe": "",
+    "severity": "MINOR",
+    "location": "server.ts:710",
+    "title": "Make sure this debug feature is deactivated before delivering the code in production."
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S5693",
+    "cwe": "",
+    "severity": "MAJOR",
+    "location": "server.ts:728",
+    "title": "Make sure the content length limit is safe here."
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S6258",
+    "cwe": "",
+    "severity": "MAJOR",
+    "location": "terraform/networking.tf:122",
+    "title": "Omitting \"access_logs\" makes logs incomplete. Make sure it is safe here."
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S5332",
+    "cwe": "",
+    "severity": "MINOR",
+    "location": "terraform/networking.tf:160",
+    "title": "Make sure allowing clear-text traffic is safe here."
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S6706",
+    "cwe": "",
+    "severity": "BLOCKER",
+    "location": "terraform/networking.tf:171",
+    "title": "Make sure this private key gets revoked, changed, and removed from the code."
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S6506",
+    "cwe": "",
+    "severity": "MAJOR",
+    "location": "vagrant/bootstrap.sh:12",
+    "title": "Not enforcing HTTPS here might allow for redirections to insecure websites. Make sure it is safe here."
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S8707",
+    "cwe": "",
+    "severity": "MAJOR",
+    "location": "scripts/report.py:0",
+    "title": "Path Traversal via command-line argument"
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S8707",
+    "cwe": "",
+    "severity": "MAJOR",
+    "location": "scripts/evaluate.py:0",
+    "title": "Path Traversal via command-line argument"
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S8707",
+    "cwe": "",
+    "severity": "MAJOR",
+    "location": "scripts/normalize.py:0",
+    "title": "Path Traversal via command-line argument"
+  },
+  {
+    "tool": "sonarqube",
+    "approach": "SAST",
+    "rule": "S6268",
+    "cwe": "",
+    "severity": "BLOCKER",
+    "location": "rules/semgrep/juice-rules.ts:0",
+    "title": "Make sure disabling Angular built-in sanitization is safe here."
+  },
+  {
+    "tool": "custom-dast",
+    "approach": "DAST",
+    "rule": "Directory listing exposes internal files",
+    "cwe": "CWE-548",
+    "severity": "MEDIUM",
+    "location": "/ftp",
+    "title": "Directory listing exposes internal files"
+  },
+  {
+    "tool": "custom-dast",
+    "approach": "DAST",
+    "rule": "Server metrics exposed without authentication",
+    "cwe": "CWE-200",
+    "severity": "MEDIUM",
+    "location": "/metrics",
+    "title": "Server metrics exposed without authentication"
+  },
+  {
+    "tool": "custom-dast",
+    "approach": "DAST",
+    "rule": "Product modified without authentication",
+    "cwe": "CWE-862",
+    "severity": "HIGH",
+    "location": "/api/Products/1",
+    "title": "Product modified without authentication"
+  },
+  {
+    "tool": "semgrep-custom",
+    "approach": "SAST",
+    "rule": "juice-angular-bypass-sanitizer",
+    "cwe": "CWE-79",
+    "severity": "ERROR",
+    "location": "frontend/src/app/about/about.component.ts:120",
+    "title": "Angular XSS protection disabled for a non-constant value (XSS)"
+  },
+  {
+    "tool": "semgrep-custom",
+    "approach": "SAST",
+    "rule": "juice-angular-bypass-sanitizer",
+    "cwe": "CWE-79",
+    "severity": "ERROR",
+    "location": "frontend/src/app/administration/administration.component.ts:74",
+    "title": "Angular XSS protection disabled for a non-constant value (XSS)"
+  },
+  {
+    "tool": "semgrep-custom",
+    "approach": "SAST",
+    "rule": "juice-angular-bypass-sanitizer",
+    "cwe": "CWE-79",
+    "severity": "ERROR",
+    "location": "frontend/src/app/administration/administration.component.ts:92",
+    "title": "Angular XSS protection disabled for a non-constant value (XSS)"
+  },
+  {
+    "tool": "semgrep-custom",
+    "approach": "SAST",
+    "rule": "juice-angular-bypass-sanitizer",
+    "cwe": "CWE-79",
+    "severity": "ERROR",
+    "location": "frontend/src/app/data-export/data-export.component.ts:58",
+    "title": "Angular XSS protection disabled for a non-constant value (XSS)"
+  },
+  {
+    "tool": "semgrep-custom",
+    "approach": "SAST",
+    "rule": "juice-angular-bypass-sanitizer",
+    "cwe": "CWE-79",
+    "severity": "ERROR",
+    "location": "frontend/src/app/last-login-ip/last-login-ip.component.ts:40",
+    "title": "Angular XSS protection disabled for a non-constant value (XSS)"
+  },
+  {
+    "tool": "semgrep-custom",
+    "approach": "SAST",
+    "rule": "juice-angular-bypass-sanitizer",
+    "cwe": "CWE-79",
+    "severity": "ERROR",
+    "location": "frontend/src/app/score-board/score-board.component.ts:83",
+    "title": "Angular XSS protection disabled for a non-constant value (XSS)"
+  },
+  {
+    "tool": "semgrep-custom",
+    "approach": "SAST",
+    "rule": "juice-angular-bypass-sanitizer",
+    "cwe": "CWE-79",
+    "severity": "ERROR",
+    "location": "frontend/src/app/search-result/search-result.component.ts:113",
+    "title": "Angular XSS protection disabled for a non-constant value (XSS)"
+  },
+  {
+    "tool": "semgrep-custom",
+    "approach": "SAST",
+    "rule": "juice-angular-bypass-sanitizer",
+    "cwe": "CWE-79",
+    "severity": "ERROR",
+    "location": "frontend/src/app/search-result/search-result.component.ts:146",
+    "title": "Angular XSS protection disabled for a non-constant value (XSS)"
+  },
+  {
+    "tool": "semgrep-custom",
+    "approach": "SAST",
+    "rule": "juice-angular-bypass-sanitizer",
+    "cwe": "CWE-79",
+    "severity": "ERROR",
+    "location": "frontend/src/app/track-result/track-result.component.ts:49",
+    "title": "Angular XSS protection disabled for a non-constant value (XSS)"
+  },
+  {
+    "tool": "semgrep-custom",
+    "approach": "SAST",
+    "rule": "juice-open-redirect-includes",
+    "cwe": "CWE-601",
+    "severity": "WARNING",
+    "location": "lib/insecurity.ts:136",
+    "title": "Redirect allowlist checked with includes(), easy to bypass (open redirect)"
+  },
+  {
+    "tool": "semgrep-custom",
+    "approach": "SAST",
+    "rule": "juice-node-vm-sandbox",
+    "cwe": "CWE-94",
+    "severity": "ERROR",
+    "location": "lib/xml.ts:38",
+    "title": "Code run with Node vm, which is not a security sandbox (code injection)"
+  },
+  {
+    "tool": "semgrep-custom",
+    "approach": "SAST",
+    "rule": "juice-node-vm-sandbox",
+    "cwe": "CWE-94",
+    "severity": "ERROR",
+    "location": "routes/b2bOrder.ts:23",
+    "title": "Code run with Node vm, which is not a security sandbox (code injection)"
+  },
+  {
+    "tool": "semgrep-custom",
+    "approach": "SAST",
+    "rule": "juice-nosql-where-injection",
+    "cwe": "CWE-943",
+    "severity": "ERROR",
+    "location": "routes/chat.ts:149",
+    "title": "$where clause built from a variable (NoSQL injection)"
+  },
+  {
+    "tool": "semgrep-custom",
+    "approach": "SAST",
+    "rule": "juice-node-vm-sandbox",
+    "cwe": "CWE-94",
+    "severity": "ERROR",
+    "location": "routes/fileUpload.ts:114",
+    "title": "Code run with Node vm, which is not a security sandbox (code injection)"
+  },
+  {
+    "tool": "semgrep-custom",
+    "approach": "SAST",
+    "rule": "juice-sequelize-raw-sqli",
+    "cwe": "CWE-89",
+    "severity": "ERROR",
+    "location": "routes/login.ts:34",
+    "title": "User input reaches a raw SQL query (SQL injection)"
+  },
+  {
+    "tool": "semgrep-custom",
+    "approach": "SAST",
+    "rule": "juice-sequelize-raw-sqli",
+    "cwe": "CWE-89",
+    "severity": "ERROR",
+    "location": "routes/search.ts:23",
+    "title": "User input reaches a raw SQL query (SQL injection)"
+  },
+  {
+    "tool": "semgrep-custom",
+    "approach": "SAST",
+    "rule": "juice-nosql-where-injection",
+    "cwe": "CWE-943",
+    "severity": "ERROR",
+    "location": "routes/showProductReviews.ts:36",
+    "title": "$where clause built from a variable (NoSQL injection)"
+  },
+  {
+    "tool": "semgrep-custom",
+    "approach": "SAST",
+    "rule": "juice-nosql-where-injection",
+    "cwe": "CWE-943",
+    "severity": "ERROR",
+    "location": "routes/trackOrder.ts:18",
+    "title": "$where clause built from a variable (NoSQL injection)"
+  },
+  {
+    "tool": "semgrep-custom",
+    "approach": "SAST",
+    "rule": "juice-nosql-update-selector",
+    "cwe": "CWE-943",
+    "severity": "WARNING",
+    "location": "routes/updateProductReviews.ts:17",
+    "title": "Update selector taken straight from the request body (NoSQL injection)"
+  },
+  {
+    "tool": "semgrep-custom",
+    "approach": "SAST",
+    "rule": "juice-directory-listing",
+    "cwe": "CWE-548",
+    "severity": "WARNING",
+    "location": "server.ts:269",
+    "title": "serve-index makes every file in this folder browsable (directory listing)"
+  },
+  {
+    "tool": "semgrep-custom",
+    "approach": "SAST",
+    "rule": "juice-directory-listing",
+    "cwe": "CWE-548",
+    "severity": "WARNING",
+    "location": "server.ts:290",
+    "title": "serve-index makes every file in this folder browsable (directory listing)"
+  },
+  {
+    "tool": "semgrep-custom",
+    "approach": "SAST",
+    "rule": "juice-directory-listing",
+    "cwe": "CWE-548",
+    "severity": "WARNING",
+    "location": "server.ts:294",
+    "title": "serve-index makes every file in this folder browsable (directory listing)"
+  },
+  {
+    "tool": "semgrep-custom",
+    "approach": "SAST",
+    "rule": "juice-directory-listing",
+    "cwe": "CWE-548",
+    "severity": "WARNING",
+    "location": "server.ts:298",
+    "title": "serve-index makes every file in this folder browsable (directory listing)"
+  },
+  {
+    "tool": "semgrep-custom",
+    "approach": "SAST",
+    "rule": "juice-directory-listing",
+    "cwe": "CWE-548",
+    "severity": "WARNING",
+    "location": "server.ts:302",
+    "title": "serve-index makes every file in this folder browsable (directory listing)"
+  },
+  {
+    "tool": "semgrep",
+    "approach": "SAST",
+    "rule": "github-actions-mutable-action-tag",
+    "cwe": "CWE-1357",
+    "severity": "WARNING",
+    "location": ".github/workflows/ci.yml:198",
+    "title": "GitHub Actions step uses a mutable tag or branch reference. Tags and branch names can be silently repointed by the action owner, enabling supply-chain"
+  },
+  {
+    "tool": "semgrep",
+    "approach": "SAST",
+    "rule": "gha-curl-pipe-shell",
+    "cwe": "CWE-78",
+    "severity": "ERROR",
+    "location": ".github/workflows/ci.yml:374",
+    "title": "A `run:` step pipes the output of `curl` or `wget` directly into a shell interpreter. This is the \"curl | bash\" install pattern \u2014 if the remote server"
+  },
+  {
+    "tool": "semgrep",
+    "approach": "SAST",
+    "rule": "github-actions-mutable-action-tag",
+    "cwe": "CWE-1357",
+    "severity": "WARNING",
+    "location": ".github/workflows/codeql-analysis.yml:23",
+    "title": "GitHub Actions step uses a mutable tag or branch reference. Tags and branch names can be silently repointed by the action owner, enabling supply-chain"
+  },
+  {
+    "tool": "semgrep",
+    "approach": "SAST",
+    "rule": "github-actions-mutable-action-tag",
+    "cwe": "CWE-1357",
+    "severity": "WARNING",
+    "location": ".github/workflows/codeql-analysis.yml:34",
+    "title": "GitHub Actions step uses a mutable tag or branch reference. Tags and branch names can be silently repointed by the action owner, enabling supply-chain"
+  },
+  {
+    "tool": "semgrep",
+    "approach": "SAST",
+    "rule": "github-actions-mutable-action-tag",
+    "cwe": "CWE-1357",
+    "severity": "WARNING",
+    "location": ".github/workflows/codeql-analysis.yml:36",
+    "title": "GitHub Actions step uses a mutable tag or branch reference. Tags and branch names can be silently repointed by the action owner, enabling supply-chain"
+  },
+  {
+    "tool": "semgrep",
+    "approach": "SAST",
+    "rule": "github-actions-mutable-action-tag",
+    "cwe": "CWE-1357",
+    "severity": "WARNING",
+    "location": ".github/workflows/image_actions.yml:30",
+    "title": "GitHub Actions step uses a mutable tag or branch reference. Tags and branch names can be silently repointed by the action owner, enabling supply-chain"
+  },
+  {
+    "tool": "semgrep",
+    "approach": "SAST",
+    "rule": "github-actions-mutable-action-tag",
+    "cwe": "CWE-1357",
+    "severity": "WARNING",
+    "location": ".github/workflows/image_actions.yml:33",
+    "title": "GitHub Actions step uses a mutable tag or branch reference. Tags and branch names can be silently repointed by the action owner, enabling supply-chain"
+  },
+  {
+    "tool": "semgrep",
+    "approach": "SAST",
+    "rule": "github-actions-mutable-action-tag",
+    "cwe": "CWE-1357",
+    "severity": "WARNING",
+    "location": ".github/workflows/image_actions.yml:42",
+    "title": "GitHub Actions step uses a mutable tag or branch reference. Tags and branch names can be silently repointed by the action owner, enabling supply-chain"
+  },
+  {
+    "tool": "semgrep",
+    "approach": "SAST",
+    "rule": "run-shell-injection",
+    "cwe": "CWE-78",
+    "severity": "ERROR",
+    "location": ".github/workflows/update-challenges-ebook.yml:22",
+    "title": "Using variable interpolation `${{...}}` with `github` context data in a `run:` step could allow an attacker to inject their own code into the runner. "
+  },
+  {
+    "tool": "semgrep",
+    "approach": "SAST",
+    "rule": "run-shell-injection",
+    "cwe": "CWE-78",
+    "severity": "ERROR",
+    "location": ".github/workflows/update-challenges-www-legacy.yml:27",
+    "title": "Using variable interpolation `${{...}}` with `github` context data in a `run:` step could allow an attacker to inject their own code into the runner. "
+  },
+  {
+    "tool": "semgrep",
+    "approach": "SAST",
+    "rule": "run-shell-injection",
+    "cwe": "CWE-78",
+    "severity": "ERROR",
+    "location": ".github/workflows/update-challenges-www-legacy.yml:36",
+    "title": "Using variable interpolation `${{...}}` with `github` context data in a `run:` step could allow an attacker to inject their own code into the runner. "
+  },
+  {
+    "tool": "semgrep",
+    "approach": "SAST",
+    "rule": "run-shell-injection",
+    "cwe": "CWE-78",
+    "severity": "ERROR",
+    "location": ".github/workflows/update-challenges-www.yml:27",
+    "title": "Using variable interpolation `${{...}}` with `github` context data in a `run:` step could allow an attacker to inject their own code into the runner. "
+  },
+  {
+    "tool": "semgrep",
+    "approach": "SAST",
+    "rule": "run-shell-injection",
+    "cwe": "CWE-78",
+    "severity": "ERROR",
+    "location": ".github/workflows/update-challenges-www.yml:36",
+    "title": "Using variable interpolation `${{...}}` with `github` context data in a `run:` step could allow an attacker to inject their own code into the runner. "
+  },
+  {
+    "tool": "semgrep",
+    "approach": "SAST",
+    "rule": "npm-missing-minimum-release-age",
+    "cwe": "CWE-829",
+    "severity": "MEDIUM",
+    "location": ".npmrc:1",
+    "title": "This .npmrc does not set a minimum release age or sets it too low. Newly published packages can be malicious or unstable. Add `min-release-age = 7` to"
+  },
+  {
+    "tool": "semgrep",
+    "approach": "SAST",
+    "rule": "npm-missing-minimum-release-age",
+    "cwe": "CWE-829",
+    "severity": "MEDIUM",
+    "location": "frontend/.npmrc:1",
+    "title": "This .npmrc does not set a minimum release age or sets it too low. Newly published packages can be malicious or unstable. Add `min-release-age = 7` to"
+  },
+  {
+    "tool": "semgrep",
+    "approach": "SAST",
+    "rule": "aws-subnet-has-public-ip-address",
+    "cwe": "CWE-1220",
+    "severity": "WARNING",
+    "location": "infrastructure/terraform/networking.tf:18",
+    "title": "Resources in the AWS subnet are assigned a public IP address. Resources should not be exposed on the public internet, but should have access limited t"
+  },
+  {
+    "tool": "semgrep",
+    "approach": "SAST",
+    "rule": "insecure-load-balancer-tls-version",
+    "cwe": "CWE-326",
+    "severity": "WARNING",
+    "location": "infrastructure/terraform/networking.tf:160",
+    "title": "Detected an AWS load balancer with an insecure TLS version. TLS versions less than 1.2 are considered insecure because they can be broken. To fix this"
+  },
+  {
+    "tool": "semgrep",
+    "approach": "SAST",
+    "rule": "hardcoded-jwt-secret",
+    "cwe": "CWE-798",
+    "severity": "WARNING",
+    "location": "lib/insecurity.ts:54",
+    "title": "A hard-coded credential was detected. It is not recommended to store credentials in source-code, as this risks secrets being leaked and used by either"
+  },
+  {
+    "tool": "semgrep",
+    "approach": "SAST",
+    "rule": "express-res-sendfile",
+    "cwe": "CWE-73",
+    "severity": "WARNING",
+    "location": "routes/fileServer.ts:32",
+    "title": "The application processes user-input, this is passed to res.sendFile which can allow an attacker to arbitrarily read files on the system through path "
+  },
+  {
+    "tool": "semgrep",
+    "approach": "SAST",
+    "rule": "express-res-sendfile",
+    "cwe": "CWE-73",
+    "severity": "WARNING",
+    "location": "routes/keyServer.ts:14",
+    "title": "The application processes user-input, this is passed to res.sendFile which can allow an attacker to arbitrarily read files on the system through path "
+  },
+  {
+    "tool": "semgrep",
+    "approach": "SAST",
+    "rule": "express-res-sendfile",
+    "cwe": "CWE-73",
+    "severity": "WARNING",
+    "location": "routes/logfileServer.ts:14",
+    "title": "The application processes user-input, this is passed to res.sendFile which can allow an attacker to arbitrarily read files on the system through path "
+  },
+  {
+    "tool": "semgrep",
+    "approach": "SAST",
+    "rule": "express-sequelize-injection",
+    "cwe": "CWE-89",
+    "severity": "ERROR",
+    "location": "routes/login.ts:34",
+    "title": "Detected a sequelize statement that is tainted by user-input. This could lead to SQL injection if the variable is user-controlled and is not properly "
+  },
+  {
+    "tool": "semgrep",
+    "approach": "SAST",
+    "rule": "express-res-sendfile",
+    "cwe": "CWE-73",
+    "severity": "WARNING",
+    "location": "routes/quarantineServer.ts:14",
+    "title": "The application processes user-input, this is passed to res.sendFile which can allow an attacker to arbitrarily read files on the system through path "
+  },
+  {
+    "tool": "semgrep",
+    "approach": "SAST",
+    "rule": "express-open-redirect",
+    "cwe": "CWE-601",
+    "severity": "WARNING",
+    "location": "routes/redirect.ts:18",
+    "title": "The application redirects to a URL specified by user-supplied input `query` that is not validated. This could redirect users to malicious locations. C"
+  },
+  {
+    "tool": "semgrep",
+    "approach": "SAST",
+    "rule": "express-sequelize-injection",
+    "cwe": "CWE-89",
+    "severity": "ERROR",
+    "location": "routes/search.ts:23",
+    "title": "Detected a sequelize statement that is tainted by user-input. This could lead to SQL injection if the variable is user-controlled and is not properly "
+  },
+  {
+    "tool": "semgrep",
+    "approach": "SAST",
+    "rule": "code-string-concat",
+    "cwe": "CWE-95",
+    "severity": "ERROR",
+    "location": "routes/userProfile.ts:65",
+    "title": "Found data from an Express or Next web request flowing to `eval`. If this data is user-controllable this can lead to execution of arbitrary system com"
+  },
+  {
+    "tool": "semgrep",
+    "approach": "SAST",
+    "rule": "express-check-directory-listing",
+    "cwe": "CWE-548",
+    "severity": "WARNING",
+    "location": "server.ts:269",
+    "title": "Directory listing/indexing is enabled, which may lead to disclosure of sensitive directories and files. It is recommended to disable directory listing"
+  },
+  {
+    "tool": "semgrep",
+    "approach": "SAST",
+    "rule": "express-check-directory-listing",
+    "cwe": "CWE-548",
+    "severity": "WARNING",
+    "location": "server.ts:290",
+    "title": "Directory listing/indexing is enabled, which may lead to disclosure of sensitive directories and files. It is recommended to disable directory listing"
+  },
+  {
+    "tool": "semgrep",
+    "approach": "SAST",
+    "rule": "express-check-directory-listing",
+    "cwe": "CWE-548",
+    "severity": "WARNING",
+    "location": "server.ts:294",
+    "title": "Directory listing/indexing is enabled, which may lead to disclosure of sensitive directories and files. It is recommended to disable directory listing"
+  },
+  {
+    "tool": "semgrep",
+    "approach": "SAST",
+    "rule": "express-check-directory-listing",
+    "cwe": "CWE-548",
+    "severity": "WARNING",
+    "location": "server.ts:298",
+    "title": "Directory listing/indexing is enabled, which may lead to disclosure of sensitive directories and files. It is recommended to disable directory listing"
+  },
+  {
+    "tool": "semgrep",
+    "approach": "SAST",
+    "rule": "express-check-directory-listing",
+    "cwe": "CWE-548",
+    "severity": "WARNING",
+    "location": "server.ts:302",
+    "title": "Directory listing/indexing is enabled, which may lead to disclosure of sensitive directories and files. It is recommended to disable directory listing"
+  },
+  {
+    "tool": "semgrep",
+    "approach": "SAST",
+    "rule": "aws-subnet-has-public-ip-address",
+    "cwe": "CWE-1220",
+    "severity": "WARNING",
+    "location": "terraform/networking.tf:18",
+    "title": "Resources in the AWS subnet are assigned a public IP address. Resources should not be exposed on the public internet, but should have access limited t"
+  },
+  {
+    "tool": "semgrep",
+    "approach": "SAST",
+    "rule": "insecure-load-balancer-tls-version",
+    "cwe": "CWE-326",
+    "severity": "WARNING",
+    "location": "terraform/networking.tf:160",
+    "title": "Detected an AWS load balancer with an insecure TLS version. TLS versions less than 1.2 are considered insecure because they can be broken. To fix this"
+  }
+]
