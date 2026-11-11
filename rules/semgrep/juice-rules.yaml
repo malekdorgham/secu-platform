@@ -1,0 +1,83 @@
+rules:
+- id: juice-angular-bypass-sanitizer
+  languages: [typescript]
+  severity: ERROR
+  message: Angular XSS protection disabled for a non-constant value (XSS)
+  metadata: {cwe: CWE-79, custom: true}
+  patterns:
+  - pattern-either:
+    - {pattern: $S.bypassSecurityTrustHtml($X)}
+    - {pattern: $S.bypassSecurityTrustScript($X)}
+    - {pattern: $S.bypassSecurityTrustUrl($X)}
+    - {pattern: $S.bypassSecurityTrustResourceUrl($X)}
+  - {pattern-not: $S.$M("...")}
+- id: juice-directory-listing
+  languages: [typescript, javascript]
+  severity: WARNING
+  message: serve-index makes every file in this folder browsable (directory listing)
+  metadata: {cwe: CWE-548, custom: true}
+  pattern-either:
+  - {pattern: '$APP.use($PATH, ..., serveIndex(...))'}
+  - {pattern: $APP.use(serveIndex(...))}
+- id: juice-node-vm-sandbox
+  languages: [typescript, javascript]
+  severity: ERROR
+  message: Code run with Node vm, which is not a security sandbox (code injection)
+  metadata: {cwe: CWE-94, custom: true}
+  pattern-either:
+  - {pattern: vm.runInContext(...)}
+  - {pattern: vm.runInNewContext(...)}
+  - {pattern: new vm.Script(...)}
+- id: juice-nosql-update-selector
+  languages: [typescript, javascript]
+  severity: WARNING
+  message: Update selector taken straight from the request body (NoSQL injection)
+  metadata: {cwe: CWE-943, custom: true}
+  pattern-either:
+  - pattern: |
+      $COLL.update({ _id: req.body.$F }, ...)
+  - pattern: |
+      $COLL.updateMany({ _id: req.body.$F }, ...)
+  - pattern: |
+      $COLL.update({ _id: req.body.$F }, $SET, { multi: true })
+- id: juice-nosql-where-injection
+  languages: [typescript, javascript]
+  severity: ERROR
+  message: $where clause built from a variable (NoSQL injection)
+  metadata: {cwe: CWE-943, custom: true}
+  patterns:
+  - pattern-either:
+    - pattern: |
+        $COLL.find({ $where: $EXPR, ... })
+    - pattern: |
+        $COLL.findOne({ $where: $EXPR, ... })
+  - pattern-not: |
+      $COLL.find({ $where: "...", ... })
+  - pattern-not: |
+      $COLL.findOne({ $where: "...", ... })
+- id: juice-open-redirect-includes
+  languages: [typescript, javascript]
+  severity: WARNING
+  message: Redirect allowlist checked with includes(), easy to bypass (open redirect)
+  metadata: {cwe: CWE-601, custom: true}
+  patterns:
+  - pattern-inside: |
+      for (const $ALLOWED of $LIST) { ... }
+  - {pattern: $URL.includes($ALLOWED)}
+- id: juice-sequelize-raw-sqli
+  mode: taint
+  languages: [typescript, javascript]
+  severity: ERROR
+  message: User input reaches a raw SQL query (SQL injection)
+  metadata: {cwe: CWE-89, custom: true}
+  pattern-sources:
+  - {pattern: req.body}
+  - {pattern: req.query}
+  - {pattern: req.params}
+  pattern-sanitizers:
+  - {pattern: Number(...)}
+  - {pattern: parseInt(...)}
+  pattern-sinks:
+  - patterns:
+    - {pattern: '$DB.sequelize.query($SQL, ...)'}
+    - {focus-metavariable: $SQL}
