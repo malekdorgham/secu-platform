@@ -12,11 +12,15 @@ env:
         verification:
           method: poll
           pollUrl: http://localhost:3000/rest/user/whoami
-          loggedInRegex: '"email"'
+          pollFrequency: 60
+          pollUnits: requests
+          loggedInRegex: 'zap@test\.local'
+          loggedOutRegex: '"user":\{\}'
       sessionManagement:
         method: headers
         parameters:
           Authorization: "Bearer {%json:authentication.token%}"
+          Cookie: "token={%json:authentication.token%}"
       users:
         - name: tester
           credentials:
