@@ -1,0 +1,518 @@
+{
+  "per_tool": {
+    "custom-dast": {
+      "findings": 3,
+      "TP": 3,
+      "FP": 0,
+      "FN": 13,
+      "precision": 1.0,
+      "recall": 0.188,
+      "F1": 0.316,
+      "found": [
+        "JS-09",
+        "JS-10",
+        "JS-17"
+      ]
+    },
+    "npm-audit": {
+      "findings": 61,
+      "TP": 17,
+      "FP": 44,
+      "FN": 0,
+      "precision": 0.279,
+      "recall": 1.0,
+      "F1": 0.436,
+      "found": [
+        "JS-SCA-1",
+        "JS-SCA-2",
+        "JS-SCA-3",
+        "JS-SCA-4",
+        "JS-SCA-5"
+      ]
+    },
+    "semgrep": {
+      "findings": 33,
+      "TP": 10,
+      "FP": 23,
+      "FN": 11,
+      "precision": 0.303,
+      "recall": 0.353,
+      "F1": 0.326,
+      "found": [
+        "JS-01",
+        "JS-02",
+        "JS-08",
+        "JS-09",
+        "JS-12",
+        "JS-16"
+      ]
+    },
+    "semgrep-custom": {
+      "findings": 24,
+      "TP": 17,
+      "FP": 7,
+      "FN": 6,
+      "precision": 0.708,
+      "recall": 0.647,
+      "F1": 0.676,
+      "found": [
+        "JS-01",
+        "JS-02",
+        "JS-03",
+        "JS-04",
+        "JS-05",
+        "JS-06",
+        "JS-07",
+        "JS-08",
+        "JS-09",
+        "JS-13",
+        "JS-14"
+      ]
+    },
+    "sonarqube": {
+      "findings": 116,
+      "TP": 11,
+      "FP": 105,
+      "FN": 8,
+      "precision": 0.095,
+      "recall": 0.529,
+      "F1": 0.161,
+      "found": [
+        "JS-01",
+        "JS-02",
+        "JS-05",
+        "JS-08",
+        "JS-11",
+        "JS-13",
+        "JS-14",
+        "JS-15",
+        "JS-16"
+      ]
+    },
+    "trivy": {
+      "findings": 68,
+      "TP": 24,
+      "FP": 44,
+      "FN": 0,
+      "precision": 0.353,
+      "recall": 1.0,
+      "F1": 0.522,
+      "found": [
+        "JS-SCA-1",
+        "JS-SCA-2",
+        "JS-SCA-3",
+        "JS-SCA-4",
+        "JS-SCA-5"
+      ]
+    },
+    "zap": {
+      "findings": 1,
+      "TP": 0,
+      "FP": 1,
+      "FN": 16,
+      "precision": 0.0,
+      "recall": 0.0,
+      "F1": 0.0,
+      "found": []
+    }
+  },
+  "per_approach": {
+    "DAST": {
+      "findings": 4,
+      "TP": 3,
+      "FP": 1,
+      "FN": 13,
+      "precision": 0.75,
+      "recall": 0.188,
+      "F1": 0.3,
+      "found": [
+        "JS-09",
+        "JS-10",
+        "JS-17"
+      ]
+    },
+    "SAST": {
+      "findings": 173,
+      "TP": 38,
+      "FP": 135,
+      "FN": 2,
+      "precision": 0.22,
+      "recall": 0.882,
+      "F1": 0.352,
+      "found": [
+        "JS-01",
+        "JS-02",
+        "JS-03",
+        "JS-04",
+        "JS-05",
+        "JS-06",
+        "JS-07",
+        "JS-08",
+        "JS-09",
+        "JS-11",
+        "JS-12",
+        "JS-13",
+        "JS-14",
+        "JS-15",
+        "JS-16"
+      ]
+    },
+    "SCA": {
+      "findings": 129,
+      "TP": 41,
+      "FP": 88,
+      "FN": 0,
+      "precision": 0.318,
+      "recall": 1.0,
+      "F1": 0.482,
+      "found": [
+        "JS-SCA-1",
+        "JS-SCA-2",
+        "JS-SCA-3",
+        "JS-SCA-4",
+        "JS-SCA-5"
+      ]
+    }
+  },
+  "before": {
+    "findings": 279,
+    "TP": 62,
+    "FP": 217,
+    "FN": 8,
+    "precision": 0.222,
+    "recall": 0.667,
+    "F1": 0.333,
+    "found": [
+      "JS-01",
+      "JS-02",
+      "JS-05",
+      "JS-08",
+      "JS-09",
+      "JS-11",
+      "JS-12",
+      "JS-13",
+      "JS-14",
+      "JS-15",
+      "JS-16",
+      "JS-SCA-1",
+      "JS-SCA-2",
+      "JS-SCA-3",
+      "JS-SCA-4",
+      "JS-SCA-5"
+    ]
+  },
+  "after": {
+    "findings": 306,
+    "TP": 82,
+    "FP": 224,
+    "FN": 2,
+    "precision": 0.268,
+    "recall": 0.917,
+    "F1": 0.415,
+    "found": [
+      "JS-01",
+      "JS-02",
+      "JS-03",
+      "JS-04",
+      "JS-05",
+      "JS-06",
+      "JS-07",
+      "JS-08",
+      "JS-09",
+      "JS-10",
+      "JS-11",
+      "JS-12",
+      "JS-13",
+      "JS-14",
+      "JS-15",
+      "JS-16",
+      "JS-17",
+      "JS-SCA-1",
+      "JS-SCA-2",
+      "JS-SCA-3",
+      "JS-SCA-4",
+      "JS-SCA-5"
+    ]
+  },
+  "truth": [
+    {
+      "id": "JS-01",
+      "name": "SQL injection in login",
+      "approaches": [
+        "SAST",
+        "DAST"
+      ],
+      "found_by": [
+        "semgrep",
+        "semgrep-custom",
+        "sonarqube"
+      ]
+    },
+    {
+      "id": "JS-02",
+      "name": "UNION SQL injection in product search",
+      "approaches": [
+        "SAST",
+        "DAST"
+      ],
+      "found_by": [
+        "semgrep",
+        "semgrep-custom",
+        "sonarqube"
+      ]
+    },
+    {
+      "id": "JS-03",
+      "name": "NoSQL injection in product reviews",
+      "approaches": [
+        "SAST",
+        "DAST"
+      ],
+      "found_by": [
+        "semgrep-custom"
+      ]
+    },
+    {
+      "id": "JS-04",
+      "name": "NoSQL injection in order tracking",
+      "approaches": [
+        "SAST",
+        "DAST"
+      ],
+      "found_by": [
+        "semgrep-custom"
+      ]
+    },
+    {
+      "id": "JS-05",
+      "name": "NoSQL mass update of reviews",
+      "approaches": [
+        "SAST",
+        "DAST"
+      ],
+      "found_by": [
+        "semgrep-custom",
+        "sonarqube"
+      ]
+    },
+    {
+      "id": "JS-06",
+      "name": "DOM XSS in search",
+      "approaches": [
+        "SAST",
+        "DAST"
+      ],
+      "found_by": [
+        "semgrep-custom"
+      ]
+    },
+    {
+      "id": "JS-07",
+      "name": "Reflected XSS in order tracking",
+      "approaches": [
+        "SAST",
+        "DAST"
+      ],
+      "found_by": [
+        "semgrep-custom"
+      ]
+    },
+    {
+      "id": "JS-08",
+      "name": "Open redirect allowlist bypass",
+      "approaches": [
+        "SAST",
+        "DAST"
+      ],
+      "found_by": [
+        "semgrep",
+        "semgrep-custom",
+        "sonarqube"
+      ]
+    },
+    {
+      "id": "JS-09",
+      "name": "Directory listing of /ftp",
+      "approaches": [
+        "SAST",
+        "DAST"
+      ],
+      "found_by": [
+        "custom-dast",
+        "semgrep",
+        "semgrep-custom"
+      ]
+    },
+    {
+      "id": "JS-10",
+      "name": "Prometheus metrics exposed",
+      "approaches": [
+        "DAST"
+      ],
+      "found_by": [
+        "custom-dast"
+      ]
+    },
+    {
+      "id": "JS-11",
+      "name": "MD5 password hashing",
+      "approaches": [
+        "SAST"
+      ],
+      "found_by": [
+        "sonarqube"
+      ]
+    },
+    {
+      "id": "JS-12",
+      "name": "Hardcoded JWT private key",
+      "approaches": [
+        "SAST"
+      ],
+      "found_by": [
+        "semgrep"
+      ]
+    },
+    {
+      "id": "JS-13",
+      "name": "Code execution via vm in B2B orders",
+      "approaches": [
+        "SAST",
+        "DAST"
+      ],
+      "found_by": [
+        "semgrep-custom",
+        "sonarqube"
+      ]
+    },
+    {
+      "id": "JS-14",
+      "name": "XXE in file upload",
+      "approaches": [
+        "SAST",
+        "DAST"
+      ],
+      "found_by": [
+        "semgrep-custom",
+        "sonarqube"
+      ]
+    },
+    {
+      "id": "JS-15",
+      "name": "SSRF via profile image URL",
+      "approaches": [
+        "SAST",
+        "DAST"
+      ],
+      "found_by": [
+        "sonarqube"
+      ]
+    },
+    {
+      "id": "JS-16",
+      "name": "Code injection (eval) in username",
+      "approaches": [
+        "SAST",
+        "DAST"
+      ],
+      "found_by": [
+        "semgrep",
+        "sonarqube"
+      ]
+    },
+    {
+      "id": "JS-17",
+      "name": "Product update without authentication",
+      "approaches": [
+        "DAST"
+      ],
+      "found_by": [
+        "custom-dast"
+      ]
+    },
+    {
+      "id": "JS-18",
+      "name": "CORS allows any origin",
+      "approaches": [
+        "SAST",
+        "DAST"
+      ],
+      "found_by": []
+    },
+    {
+      "id": "JS-19",
+      "name": "Zip slip in file upload",
+      "approaches": [
+        "SAST"
+      ],
+      "found_by": []
+    },
+    {
+      "id": "JS-SCA-1",
+      "name": "jsonwebtoken 0.4.0 (signature bypass)",
+      "approaches": [
+        "SCA"
+      ],
+      "found_by": [
+        "npm-audit",
+        "trivy"
+      ]
+    },
+    {
+      "id": "JS-SCA-2",
+      "name": "express-jwt 0.1.3 (authorization bypass)",
+      "approaches": [
+        "SCA"
+      ],
+      "found_by": [
+        "npm-audit",
+        "trivy"
+      ]
+    },
+    {
+      "id": "JS-SCA-3",
+      "name": "sanitize-html 1.4.2 (XSS)",
+      "approaches": [
+        "SCA"
+      ],
+      "found_by": [
+        "npm-audit",
+        "trivy"
+      ]
+    },
+    {
+      "id": "JS-SCA-4",
+      "name": "marsdb (command injection)",
+      "approaches": [
+        "SCA"
+      ],
+      "found_by": [
+        "npm-audit",
+        "trivy"
+      ]
+    },
+    {
+      "id": "JS-SCA-5",
+      "name": "notevil (sandbox escape)",
+      "approaches": [
+        "SCA"
+      ],
+      "found_by": [
+        "npm-audit",
+        "trivy"
+      ]
+    }
+  ],
+  "missed_by_all": [
+    "CORS allows any origin",
+    "Zip slip in file upload"
+  ],
+  "custom_only": [
+    "NoSQL injection in product reviews",
+    "NoSQL injection in order tracking",
+    "DOM XSS in search",
+    "Reflected XSS in order tracking",
+    "Prometheus metrics exposed",
+    "Product update without authentication"
+  ]
+}
